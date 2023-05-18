@@ -10,11 +10,11 @@ Moddio is more than just a game development platform—it's a thriving community
 
 Games created using Moddio span a wide range of genres and themes. Here are a few standout examples that demonstrate the platform's capabilities:
 
-- [Braains](https://www.modd.io/play/braainsio/) - Physics-based zombie survival game where you’re either a human or a zombie
-- [Cursed Cabin](https://www.modd.io/play/cursed-cabin/) - Story-based cooperative RPG game where you and your friends need to solve puzzles and find the mystery of the cabin
-- [Goose Idle](https://www.modd.io/play/gooseidle/) - A casual game where you and friends are geese that eat food and grow
+- [Braains](https://www.modd.io/play/braainsio/?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding) - Physics-based zombie survival game where you’re either a human or a zombie
+- [Cursed Cabin](https://www.modd.io/play/cursed-cabin/?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding) - Story-based cooperative RPG game where you and your friends need to solve puzzles and find the mystery of the cabin
+- [Goose Idle](https://www.modd.io/play/gooseidle/?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding) - A casual game where you and friends are geese that eat food and grow
 
-These examples showcase the potential of Moddio as a platform for developing engaging games. You can check out many other [popular games here](https://www.modd.io/games/popular). Let them inspire you as you embark on your game development journey.
+These examples showcase the potential of Moddio as a platform for developing engaging games. You can check out many other [popular games here](https://www.modd.io/games/popular?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding). Let them inspire you as you embark on your game development journey.
 
 ## Exploring the Moddio Workspaces
 
@@ -54,11 +54,11 @@ Remember, designing a game is a creative and iterative process. Don't hesitate t
 
 Moddio is not just a game development platform, but a wellspring of resources and opportunities to help you grow and excel as a developer:
 
-- [Learning Resources](https://www.modd.io/learn/): Our dedicated learning center filled with insightful tutorials, guides, and articles. Whether you're a beginner looking for a step-by-step tutorial or an experienced developer seeking advanced tips, Learn Resources is your go-to place for everything you need to know.
-- [Creators Lounge on Discord](https://discord.com/invite/XRe8T7K): Join our thriving community on Discord. Here, you can connect with other creators, collaborate on projects, seek advice, or simply engage in game development discussions.
-- [Moddio Forum](https://www.modd.io/forum/): Our forum is the hub for all things Moddio. You can discuss ideas, ask questions, share your work, and provide feedback to fellow developers. Whether you're troubleshooting a problem or seeking inspiration for your next project, the forums are a helpful and supportive space.
+- [Learning Resources](https://www.modd.io/learn/?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding): Our dedicated learning center filled with insightful tutorials, guides, and articles. Whether you're a beginner looking for a step-by-step tutorial or an experienced developer seeking advanced tips, Learn Resources is your go-to place for everything you need to know.
+- [Creators Lounge on Discord](https://discord.com/invite/XRe8T7K?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding): Join our thriving community on Discord. Here, you can connect with other creators, collaborate on projects, seek advice, or simply engage in game development discussions.
+- [Moddio Forum](https://www.modd.io/forum/?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding): Our forum is the hub for all things Moddio. You can discuss ideas, ask questions, share your work, and provide feedback to fellow developers. Whether you're troubleshooting a problem or seeking inspiration for your next project, the forums are a helpful and supportive space.
 
-In addition to these resources, Moddio provides an exciting monetization opportunity through [Modd Coins](https://coins.modd.io/).
+In addition to these resources, Moddio provides an exciting monetization opportunity through [Modd Coins](https://coins.modd.io/?utm_source=moddio_documentation&utm_medium=getting_started_guide&utm_campaign=developer_onboarding)
 
 ## Monetization with Modd Coins
 
