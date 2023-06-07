@@ -15,4 +15,6 @@
 
 7. **Continuous Improvement:** These guidelines are subject to change as we continue to refine and improve our platform. We encourage creators to regularly review them and ensure compliance. 
 
-Remember, the purpose of coins is to reward creators for making games that are fun and foster a community of creativity. They are not meant for abuse or coin farming. Thank you for your cooperation.
+8. **Payout Requests:** Moddio reserves the right to withhold or refuse payout for any reason, particularly in instances of perceived abuse or violation of these guidelines. This is to protect the integrity of our platform, uphold fair play, and deter the misuse of Modd Coins.
+
+Remember, the purpose of coins is to reward creators for making games that are fun and foster a community of creativity. Thank you for your cooperation.
