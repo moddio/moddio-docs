@@ -11,8 +11,8 @@
 
 5. **Fair Play:** Games should be designed to offer genuine entertainment and value to players. Those created solely for Modd Coin generation will be reviewed and may be removed.
 
-6. **Moderation:** We reserve the right to review and remove any games that we deem to be violating these guidelines. Persistent abuse may result in the creator's account being banned.
+6. **Moderation:** Moddio reserves the right to review and remove any games that we deem to be violating these guidelines. Persistent abuse may result in the creator's account being banned.
 
 7. **Continuous Improvement:** These guidelines are subject to change as we continue to refine and improve our platform. We encourage creators to regularly review them and ensure compliance. 
 
-Remember, at Moddio, our aim is to foster a community of creativity and fun. Thank you for your cooperation.
+Remember, the purpose of coins is to reward creators for making games that are fun and foster a community of creativity. They are not meant for abuse or coin farming. Thank you for your cooperation.
