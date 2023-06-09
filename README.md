@@ -1,5 +1,5 @@
 <a href="https://modd.io">
-  <img src="https://res.cloudinary.com/davvp7lix/image/fetch/w_300,f_auto/https://www.modd.io/_next/static/media/logo.08e05f95.svg?w=3840&q=75" width="200" alt="Moddio logo">
+  <img src="https://www.modd.io/_next/static/media/logo.08e05f95.svg?w=3840&q=75" width="200" alt="Moddio logo">
 </a>
 
 # Modd.io - 2D Multiplayer Game Engine
