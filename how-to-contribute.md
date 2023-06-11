@@ -1,7 +1,7 @@
 # We need contributors, and we are also hiring
 First, join our [Discord](https://discord.gg/XRe8T7K) :mechanical_arm:
 ## Game Engine Contribution
-  Our Game Engine, [Taro](https://github.com/moddio/taro2) is completely free and open source under the MIT license. We are always looking for more help from the community. PR's are always welcomed.
+  Our Game Engine, [Taro Engine](https://github.com/moddio/taro2) is completely free and open source under the MIT license. We are always looking for more help from the community. PR's are always welcomed.
   
 ## Documentation Contribution
 We use [docsify](https://docsify.js.org/#/) as a framework for our docs.<br/>

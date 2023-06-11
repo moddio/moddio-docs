@@ -2,14 +2,14 @@
 
 ## Game Editor Overview
 
-We want to turn Moddio game development into a multiplayer experience, so that it's fun and collaborative to make a game.
+Moddio game development is meant to be a multiplayer experience so that it's fun and collaborative to make a game.
 
 With this editor, you'll be able to:
-\* edit maps live with friends
-\* work on scripts and game code in a shared environment
+* Edit maps live with friends
+* Work on scripts and game code in a shared environment
 
 Features we're working on:
-\* adding functionality that's missing from old sandbox
+* Adding functionality that's missing from old sandbox
 
 Since the editor is in active development, we suggest you **make frequent backups** of your game.json while working in it. To make a backup, click **Editor**, then select 'Export JSON'. You can import the JSON at any time, also through the Editor section.
 
