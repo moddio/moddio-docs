@@ -4,7 +4,7 @@
 * [How to contribute](how-to-contribute.md)
 * [Creator Basics](/overview/overview.md)
 * [Make Your First Game](first-game/making-first-game.md)
-    * [Interface](/overview/Interface.md)
+    * [Interface](overview/interface.md)
     * [Making Your First Game](first-game/first-game-tutorial.md)
 ---
 * How to Use Scripts
