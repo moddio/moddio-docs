@@ -1,5 +1,3 @@
-
-
 # Interface
 
 The core Moddio interface is the same no matter which template you use. After you go to Moddio, go to **Create** to make a new game. Then, click the **Create a new game** button, and select your template. YOu will then enter the game and load the game editor. 

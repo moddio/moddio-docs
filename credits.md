@@ -1,4 +1,4 @@
-Taro Engine is gratefully powered by the following technologies & assets:
+Moddio's game engine, Taro Engine, is powered by the following technologies & assets:
 
 - Isogenic Game Engine (https://www.isogenicengine.com/) back in 2016. Rob Evans was way ahead of his time.
 
