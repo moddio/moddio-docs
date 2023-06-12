@@ -32,7 +32,7 @@
     * [Creator Coins Guidelines](creator-coin-guideline.md)
     * [Intro to Modd Coins](monetization/intro-to-coins.md)
 ---
-* Learn with Guides[Learn with Guides](guides/guides.md)
+* [Learn with Guides](guides/guides.md)
     * [Tutorials](guides/tutorials-list.md)
 ---
 * Additional Resources
