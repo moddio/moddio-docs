@@ -2,7 +2,7 @@
 
 By using a cell sheet with multiple frames, we can customize different animations for our entities. There are important settings on the interface **Upload from computer** when you select ```Change CellSheet``` on an entity's **General** settings tab. These are ```Column Count``` and ```Row Count```. Let's look at an example image.
 
-![Example of a 4 x 4 cell sheet](../../img/Animations/cell_sheet_example.png)
+![Example of a 4 x 4 cell sheet](../../img/animations/cell_sheet_example.png)
 
 This image is ```256``` by ```256```. If we set the column and row counts to ```1```, the entity will have a sprite with just one frame, all 16 colored squares. For animations, we can slice the image into equally sized 'frames'. The colored squares that make up this example are used to illustrate a cell sheet we have uploaded that we intend to divide up into unique frames.
 
@@ -10,7 +10,7 @@ To do this, we set the ```Column Count``` and ```Row Count``` values to ```4```,
 
 Now that we have a cell sheet for our entity, we can use its individual frames to create animations. Below is an image of the interface when we select ```Add new animation``` from the drop-down list found on the **Animations** setting of an entity.
 
-![Interface when first creating a new animation](../../img/Animations/edit_animations.png)
+![Interface when first creating a new animation](../../img/animations/edit_animations.png)
 
 As with every setting we add to the game, providing a descriptive ```Name``` allows us to keep track of what the animation does. Additionally, animations can be changed through scripts and entity effects. They are accessed by their ```Name```.
 

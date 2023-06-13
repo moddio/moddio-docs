@@ -2,7 +2,7 @@
 
 Within the game, there are settings for each Entity type that govern size, shape, and some of its behaviours. On the **General** settings tab for any entity, you will find an option ```Body types```. Selecting an existing body or creating a new one will lead you to the window seen below. You will see a slightly different **Edit bodies** window, depending on which Entity type you are editing: **[Unit](../entity-types/unit.md)**, **[Item](../entity-types/item.md)**, or **[Projectile](../entity-types/projectile.md)**. The first choices offered will be mostly consistent, and we will look at those first.
 
-![Edit bodies window](../../img/Bodies/edit_bodies_top_half.png)
+![Edit bodies window](../../img/bodies/edit_bodies_top_half.png)
 
 This image shows the body creation options of a Unit. First you have the option to rename the body. Setting ```Name``` to something descriptive is important. You never want to find yourself in a situation where you are looking through available bodies and have no idea what one is supposed to be doing. Let's begin an example here where we will create a body that will be used when we want our Unit type to become very large. In the name area, we enter 'Big Unit'.
 
