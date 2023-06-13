@@ -11,7 +11,7 @@ With this editor, you'll be able to:
 Features we're working on:
 * Adding functionality that's missing from old sandbox
 
-Since the editor is in active development, we suggest you **make frequent backups** of your game.json while working in it. To make a backup, click **Editor**, then select 'Export JSON'. You can import the JSON at any time, also through the Editor section.
+Since the editor is in active development, we suggest you **make frequent backups** of your `game.json` while working in it. To make a backup, click **Editor**, then select 'Export JSON'. You can import the JSON at any time, also through the Editor section.
 
 ### General Usage:
 
