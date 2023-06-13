@@ -3,7 +3,7 @@
 </a>
 
 # Modd.io - 2D Multiplayer Game Engine
-Make IO games in seconds! With Moddio's drag & drop game editor, creators can make multiplayer games without coding
+Make IO games in seconds! With Moddio's drag & drop game editor, creators can make multiplayer games without coding.
 
 
 
@@ -21,3 +21,7 @@ Make IO games in seconds! With Moddio's drag & drop game editor, creators can ma
 - AI with attacking and pathfinding
 - Mobile controls
 - and more!
+
+# Get Started
+
+Begin by **[making your first game](first-game/making-first-game.md)**.
