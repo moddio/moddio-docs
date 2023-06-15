@@ -14,8 +14,8 @@
 
   * [Entity Types](using-scripts/entity-types/entity-types.md)
     * [Unit](using-scripts/entity-types/unit.md)
-  * [Item](using-scripts/entity-types/item.md)
-  * [Projectile](using-scripts/entity-types/projectile.md)
+    * [Item](using-scripts/entity-types/item.md)
+    * [Projectile](using-scripts/entity-types/projectile.md)
   * [World](using-scripts/world/world.md)
     * [Global Variables](using-scripts/world/global-variables.md)
     * [Player Types (Factions)](using-scripts/world/player-types.md)
