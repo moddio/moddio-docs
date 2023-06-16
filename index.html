@@ -73,9 +73,8 @@
       markdown: {
         // https://marked.js.org/#/USING_PRO.md#renderer
         renderer: {
-            image: function(href, title) {
-              console.log(title)
-                return `<img src="${href}" data-origin="${href}" alt="${title}">`
+            image: function(href, title, text) {
+                return `<img src="${href}" data-origin="${href}" alt="${text}">`
             }
         }
       }
