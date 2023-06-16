@@ -74,6 +74,7 @@
         // https://marked.js.org/#/USING_PRO.md#renderer
         renderer: {
             image: function(href, title, text) {
+                // using title for alt="" yields null for all. using extra param text sets the correct alt=""
                 return `<img src="${href}" data-origin="${href}" alt="${text}">`
             }
         }
