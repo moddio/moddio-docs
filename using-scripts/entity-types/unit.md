@@ -2,11 +2,11 @@
 
 Though these entities can be used for many different things, you will mostly see units as the characters in your game. When you create a new game, if you want the players controlling someone and interacting with the world, the most common way to do this would be through a unit. Let's look at the template game **Open World**. In this template, whenever a player joins, a unit is created and assigned to be controlled by the joining player.
 
-![Unit creation by script](../../img/unit/unit_creation.png)
+![Unit creation by script](img/unit/unit_creation.png)
 
 In this template game, the unit type is 'Homie'. In the entities tab of the editor, you can see this unit type in the list.
 
-![Game editor's entity](../../img/unit/entities_list.png)
+![Game editor's entity](img/unit/entities_list.png)
 
 It is important to understand the difference between the unit and the unit type. What we see in this image is actually the unit type. These are used as blueprints for the actual units that will exist in the game. In the "player joined" script, you can see that we are instructing the game to use the "Homie" unit type to create one unit that is an instance of this type. This means that all the details and instructions included in the unit type will be given to the unit created.
 
@@ -20,7 +20,7 @@ This section will offer descriptions of the different sections of the properties
 
 The default screen you see after clicking on properties. Here you can change the name and sprite of the unit type, as well as animations, states and other customizations.
 
-![A Unit's general settings](../../img/unit/unit_general_settings.png)
+![A Unit's general settings](img/unit/unit_general_settings.png)
 
 ### Name and Sprite
 
@@ -28,15 +28,15 @@ Perhaps the most important setting under the **General** tab is **Name**. In the
 
 Right above this option, there is an image preview of the unit type's sprite and a link that says **Change CellSheet**. This is what you click on when you want to change the appearance of units of this type.
 
-![Preview new unit sprite](../../img/unit/preview_new_unit.png)
+![Preview new unit sprite](img/unit/preview_new_unit.png)
 
 In the image above, you can see the default page that is shown when you click on this link. The main tab shown is the **Assets Library**. You can select from any of these unit sprites, and the sprite for this unit type will change to the selected image. We have selected the "Robot Futuristic Human Person" image, and now the **General** tab changes slightly to what you see in the image below.
 
-![Preview of new unit sprite](../../img/unit/preview_new_unit.png)
+![Preview of new unit sprite](img/unit/preview_new_unit.png)
 
 The other tab found when clicking on Change CellSheet is Upload from computer . Most of the time, you will want to use assets in your game that are not in the small asset library provided. This page is where you can do that. The tab can be seen below.
 
-![Upload from computer prompt](../../img/unit/computer_prompt.png)
+![Upload from computer prompt](img/unit/computer_prompt.png)
 
 As an easy example, to upload a new image for "Homie", click on the `Upload` button and select the file from your local folders. Let's just use an image -- not a sprite sheet -- so we will leave the `Column Count` and `Row Count` options set to the default, 1.
 
@@ -48,7 +48,7 @@ When the image file is selected, the text area will display its file name to the
 
 These options are different modes or states that this unit type can have. By default, this area is populated with one state, "default". The state controls the animation and the physics body of these units. In the image below, you can see the default state options.
 
-![State selection](../../img/unit/state.png)
+![State selection](img/unit/state.png)
 
 In the preview, there are three rows; each of them says "default". The first row is the name of the state. Next to the film strip icon, on the second row, is the animation for the state. The final row, with the human body icon, is the name of the physics body assigned to the state.
 
@@ -56,7 +56,7 @@ By clicking in this window, but not on top of an existing state, you will find a
 
 When you select `Add new state`, a window will appear where you can set the details for the state. Options are provided for the state's name, animation and body.
 
-![Right after clicking "Add New State"](../../img/unit/add_new_state.png)
+![Right after clicking "Add New State"](img/unit/add_new_state.png)
 
 **There are also options for particles and sound. These are not working -editor note**
 
@@ -66,13 +66,13 @@ As with selecting an existing state, creation of a new state will direct you bac
 
 The next option in the unit type customization window is where you select existing animations. You can also create new animations you want to assign to the unit type. Similar to how states were selected, clicking in this area will show a drop-down menu of existing animations, but it will also allow you to create a new animation when you select `Add new animation`. The resulting window can be seen below.
 
-![Empty new animations settings](../../img/unit/edit_animations.png)
+![Empty new animations settings](img/unit/edit_animations.png)
 
 First you have the option to set the name for the animation. It's a good idea to give your animations and states names that provide a bit of information about its use. For example, if we create an animation for our unit type 'Homie' that plays when the unit is running, we probably want to name the animation 'running' or 'run'.
 
 Next, there is an option to set the 'frames' for the animation. We will go into more detail on these in the advanced 'cellsheet' tutorial. The area next to frames will display a small image of the frames that will play in the animation. These are displayed in order, from left to right. To add new frames, click on the plus sign to the right of the list of frames. For a simple one-frame cellsheet like the one used for the 'Homie' sprite, you should see something similar to the image below.
 
-![Select frames for an animation](../../img/unit/animation_frames.png)
+![Select frames for an animation](img/unit/animation_frames.png)
 
 Here you can see what your cellsheet looks like. In our case, it's just our image. Hovering over the image, you can see a gray rectangle. This is used to show how the cellsheet is divided up. To select a certain frame, just hover over the frame that you want to add and click on it.
 
@@ -90,7 +90,7 @@ This area is formatted the same as animations. The field is filled with all the 
 
 Clicking on the open space inside the list of body types will give you a list of existing body types and an option to `Add new body`. When creating a new body, a window titled **Edit bodies** will appear. You can see what this should look like below.
 
-![The basics of bodies](../../img/unit/edit_body.png)
+![The basics of bodies](img/unit/edit_body.png)
 
 There's a lot of important settings here, so lets break them down.
 * Type
@@ -111,13 +111,13 @@ There's a lot of important settings here, so lets break them down.
 
 The classic example for an attribute on a unit is health. In fact, unit types will have two attributes by default, "Health" and "Speed". These are essentially just extra numbers that are stored on the units belonging to this unit type. Attributes and variables are similar, but there are important differences. When you set an attribute, you have additional built-in features at your disposal. The important differences are the regeneration system and the attribute bars. We will discuss these individually in a moment.
 
-[img]![The Attribute selection setting](../../img/unit/attribute_selection.png)
+[img]![The Attribute selection setting](img/unit/attribute_selection.png)
 
 Above is an image of the attributes from our unit type, "Homie". These default attributes also have default values, or numbers that the attributes are set to when the unit is created (for example right after a game server is restarted). When you create a new unit of type "Homie", the health attribute of the unit is set to 100 by default.
 
 By clicking in the empty space within the attribute list, you have the option to add existing attributes to the unit type, or you can select `Add new attributes` and a window titled **Edit attributes** will appear. You can see what this looks like in the image below.
 
-![A new empty attribute](../../img/unit/empty_attribute.png)
+![A new empty attribute](img/unit/empty_attribute.png)
 
 Let's go through each of the options provided here. To do so, we will create a new attribute on our unit type "Homie". What if our unit type is having a bad day and is a little bit angry? How about using an attribute to create a "rage meter".
 
@@ -136,13 +136,13 @@ For the "Rage" attribute, let's set it to `1`. In doing so, the "Rage" of units 
 
 We're about halfway through, so here's what our settings for the new "Rage" attribute should look like so far.
 
-![Halfway through the "Rage" setting](../../img/unit/rage_attribute_halfway.png)
+![Halfway through the "Rage" setting](img/unit/rage_attribute_halfway.png)
 
 Moving on, the next part of what makes attributes unique can be adjusted. The engine has built-in attribute bars that allow players to see attributes and their values directly on the screen. Of course you can have attributes that will not be visible, but for this example we will turn on these options so we can see the "rage meter" working.
 
 **Shown as** is a list of four buttons that allow you to set when and where the attribute bar will be visible. The option `center bar` is different from the other choices. This is specifically an HTML attribute bar that can be displayed in the bottom center of a player's screen. For units of this unit type, only the owner player of the individual unit will see this bar. We will select it. Below you can see how a `center bar` attribute is displayed in-game.
 
-[img]![The in-game center bar display](../../img/unit/center_bar_in_game.png)
+[img]![The in-game center bar display](img/unit/center_bar_in_game.png)
 
 The other options here are for attribute bars that are shown in-game, beneath the unit they belong to. Player types can have different relationsips like "hostile", "friendly", and "neutral". If we didn't want enemies to see our health bar or our "rage meter", we could leave the option `unit bar(hostile)` unselected and player types that are hostile to this unit's owner's player type would not be able to see it below the unit. Let's just enable them all for this example.
 
@@ -167,11 +167,11 @@ The **Decimal places** setting allows you to display a more precise number insid
 
 To finish up this example, we will just leave it at `0`. Now that all the settings have been looked at and adjusted, the **Edit attributes** window looks like the image below. Make sure you click the `Save` button to keep all of your changes!
 
-![The completed "Rage" attribute](../../img/unit/rage_attribute_complete.png)
+![The completed "Rage" attribute](img/unit/rage_attribute_complete.png)
 
 When the game starts, we join and are assigned a newly created unit of type "Homie". After a few seconds, we can see that our new attribute is working and our settings have been applied. Another image below provides an example view.
 
-![Our new attribute on display](../../img/unit/finished_attribute.png)
+![Our new attribute on display](img/unit/finished_attribute.png)
 
 ### Variables
 
@@ -179,17 +179,17 @@ There will be situations where you want to save specific values for each unit of
 
 Say we are making a deathmatch game, and for each unit of type "Homie", we need to track how many kills a unit has. To start, we click on the variables area, where it says `add variables`. This will display a drop-down list with all existing entity variables in your game. In the "Open World" template, there shouldn't be any to start, so it will just say `Add new variable`.
 
-![Create a new variable](../../img/unit/new_variable.png)
+![Create a new variable](img/unit/new_variable.png)
 
 The new variable creation window, titled **Add Variable**, provides three customizations. **Key** is essentially the "name" of the variable. In this example, we will call it "Kills".
 
 **DataType** and **Value** are used to define what type of data the variable will store and what the data will be when the unit is created. For "Kills", we want to count a number, so the default, `number`, is what we will use. Since Value is now the number of "Kills" we want all units of this unit type to start at, we set `0` as this default value.
 
-!["Kills" variable example](../../img/unit/kills_variable_example.png)
+!["Kills" variable example](img/unit/kills_variable_example.png)
 
 That's it! Now we have a variable on our unit type that we can access within our scripts. There are many different data types that you can set when creating a new variable, so let's look at these briefly.
 
-[img]![Different data types for entity variables](../../img/unit/different_variable_types.png)
+[img]![Different data types for entity variables](img/unit/different_variable_types.png)
 
 Since we don't need to display the data as a bar or do regeneration math on it every tick of the engine, we have a lot more freedom. While attributes could only be numbers, these variables can store whatever type of data you want. Some of these options can be left for a more advanced tutorial, but let's look at the simple and more common options.
 
@@ -203,11 +203,11 @@ The next to options under general settings define the unit type's ability to sto
 
 Units have an inventory and a backpack. Inventory is directly accessible through the number keys corresponding to the inventory slots displayed on the screen. When playing the game, press `2`, and your unit will select the item in inventory slot two. That's only if the `Inventorysize` setting is greater than or equal to 2. By default, this will be 5, but what if we set it to 1? Units of this unit type would only have 1 inventory slot, then pressing 2 would do nothing. See below for an image of the inventory on our "Homie" unit type.
 
-![Unit inventory display](../../img/unit/inventory_display.png)
+![Unit inventory display](img/unit/inventory_display.png)
 
 `Backpacksize` sets how many storage slots units of this unit type will have in addition to its inventory. The default setting is 0. This will hide the "Backpack" button in game. Set it to `9` and let's look at what happens.
 
-[img]![The unit backpack display](../../img/unit/backpack_display.png)
+[img]![The unit backpack display](img/unit/backpack_display.png)
 
 Now there is a button, `Backpack`. When clicked, you see the image above. Items can be dragged between the inventory and the backpack with your mouse. If a unit's inventory is full, but there is space in the backpack, items will automatically fill out these slots!
 
@@ -217,7 +217,7 @@ So we know units of our chosen unit type will have all of these settings when th
 
 The "Open World" template game doesn't start with any items, so we'll visit a different template for an example of this setting.
 
-![Default item configuration](../../img/unit/default_item_config.png)
+![Default item configuration](img/unit/default_item_config.png)
 
 In the "Battle Royale" template, you can see that there are two items included in the "Fighter" unit type's Default Items . The first, "Uzi" is created in this unit's first inventory slot. The "Baseball Bat" can be found in the second.
 
@@ -235,7 +235,7 @@ Although the name of the section is "Abilities & Controls", this section of the 
 
 In this area, you can find all of the existing keybindings in the game. Note that these are also referred to as "abilities" in some areas of the editor. By looking at the "Open World" template game, we can see a few default keys connected to pre-made scripts for using, picking up, and dropping items.
 
-![Default keybindings for the template game](../../img/unit/default_keybindings.png)
+![Default keybindings for the template game](img/unit/default_keybindings.png)
 
 Each blue rectangle corresponds to a specific key or mouse action. The first part of each item is what user action the ability will be linked to. In the example, the first keybind is connected to the `B` key. Next, you will see that you can set scripts for both the `KeyDown` and `KeyUp` events for the connected key or mouse button.
 
@@ -246,7 +246,7 @@ In the second item, when Mouse left click  is held down, the `start using item` 
 
 To add a new Keybinding to a unit type, click in the empty space within the list of existing items. You should see a drop-down list with all of the abilities that have already been made but have not been given to this unit type. At the bottom of the list, click on `Add new KeyBinding` to create a new ability. In the "Open World" template and on the default "Homie" unit type, this will be the only option. The **Edit keybindings** window should appear. This window is shown in the image below.
 
-![Creating a new keybind](../../img/unit/new_keybind.png)
+![Creating a new keybind](img/unit/new_keybind.png)
 
 The first setting here is the `key` or mouse button that will be connected to this ability. Click on the box to see a drop-down list where you can select from the list of keys available to be connected to abilities. Everything below this option, under **Abilities cast** will only happen when this key is pressed.
 
@@ -258,7 +258,7 @@ The **Cost** settings determine what units of this unit type have to pay to use 
 
 Let's think about the "Rage" attribute we made in the unit attribute section above. Maybe we have some entity script on our unit type that we call "Calm down". We want this script to only be run when we have a full "Rage" attribute, and we also want it to reset our "Rage" to its minimum, 0. For this example, let's assign this ability to be cast when the `J` key is released after being pressed.
 
-![Unit attribute as an ability cost](../../img/unit/unit_attribute.png)
+![Unit attribute as an ability cost](img/unit/unit_attribute.png)
 
 Don't worry about what this script actually does. We are mostly using it as a placeholder to show what the setting does. The important details are the **Cost** settings and understanding how they function.
 
@@ -310,13 +310,13 @@ Enabling this rotation method will have units of this unit type constantly chang
 
 The last element of the **Controls** tab for a unit type provides a way to customize the interface of your game on mobile devices.
 
-![Mobile game interface customization](../../img/unit/mobile_layout_customization.png)
+![Mobile game interface customization](img/unit/mobile_layout_customization.png)
 
 These settings are divided into two parts. On the left side and under Key bindings you will find all of the abilities that belong to units of this unit type. The right side, Mobile Device Canvas represents the screen of a user playing this game on a mobile device. Each item on the rightside canvas can be clicked and dragged around to change the position it will appear in game. By default, movement controls are found on the left, and rotation is on the right.
 
 Items on the left can be clicked. Doing so will remove the ability from the list and place it on the screen preview. Then it can be moved to wherever you like. The above image is for the "Homie" unit type in the "Open World" template. Below is an image of each keybind added to the game and placed in a different spot.
 
-![Custom mobile interface for this unit](../../img/unit/mobile_interface.png)
+![Custom mobile interface for this unit](img/unit/mobile_interface.png)
 
 Its important to add new keybinds to the mobile interface. If not provided, mobile players will not be able to use the abilities that are controlled by these buttons. A good mobile layout is functional and not obstructing, meaning that its easy to control the unit and the buttons don't block too much of the player's view.
 

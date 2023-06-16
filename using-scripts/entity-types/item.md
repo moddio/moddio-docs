@@ -8,7 +8,7 @@ There is an important distinction between **Item** and **Item Type**, and it hol
 
 To start, lets look at the **Open World** template. By default, there are no item types in this game, so lets create a new one.
 
-![List of entity types for Open World template](../../img/Item/entities_open_world.png)
+![List of entity types for Open World template](img/Item/entities_open_world.png)
 
 In the **Entities** window and on the header for **Items**, click on the ```Add Entity``` button to begin the creation of a new Item Type.
 
@@ -16,7 +16,7 @@ In the **Entities** window and on the header for **Items**, click on the ```Add 
 
 This is the first step for creating an item type. You could select any of the four options here, but these are provided to help you start. The choices will provide different default settings to aid in faster item creation.
 
-![Different choices for default item settings](../../img/Item/default_item_choices.png)
+![Different choices for default item settings](img/Item/default_item_choices.png)
 
 We will break these down briefly so you can get an idea of what they mean. ```Rotating Weapon``` and ```Ranged Weapon``` define an item that will rotate to face the mouse cursor along with the unit. Rotating weapon sprites will flip horizontally based on whether the mouse is on the left or right side of the screen. These are both set to the ```sprite-only``` body type by default, but the ranged weapon is connected to the unit with a ```Weld Joint```. If the item is set to have a body in the physics simulation when it is selected, the rotating weapon and  unit will behave as the same body. The ranged weapon does not have this joint, allowing it to act independently of its unit within the physics simulation.
 
@@ -30,17 +30,17 @@ A ```Melee Weapon``` has default properties that are useful for melee interactio
 
 The first options on the **General** tab of the item type settings are ```Name``` and link to ```Change CellSheet```. Changing the name of the item type allows you to better organize your game and keep track of what the item type does. Let's make a simple bow and arrow! In the name field, we will provide 'Bow', then select the ```Change CellSheet``` option.
 
-![Page two of the Assets Library for items](../../img/Item/Assets_Library_pg_2.png)
+![Page two of the Assets Library for items](img/Item/Assets_Library_pg_2.png)
 
 A window with the title **Select Image** should appear, and you will see the **Assets Library** first. Here we can choose from many provided images to use for our 'Bow'. For this example, we will select page two of the Assets Library and select 'Scribble Bow' as the image for this item type. 
 
-![The 'Upload from Computer' interface](../../img/Item/Upload_from_computer_screen.png)
+![The 'Upload from Computer' interface](img/Item/Upload_from_computer_screen.png)
 
 Additionally, you can upload your own asset to use as the sprite for this item type by clicking on the Upload from computer tab near the top of the window. If you wish to upload your own image, you will have to confirm that you are not violating copyright rules and have permission to use the image. There is also an option to allow other creators to use the asset by making it public.
 
 ```Column Count``` and ```Row Count``` are more advanced options that allow for animation of the sprite. We don't have to upload an image with just one frame. This process will be discussed more in the **ANIMATION LINK** section. Leaving these counts at their default values of ```1``` means that it is a single, one-frame image and we do not intend to have animations.
 
-![Example 'Bow' item type](../../img/Item/Bow_item_type.png)
+![Example 'Bow' item type](img/Item/Bow_item_type.png)
 
 Above, you can see what the window looks like after we have changed the name and sprite for this item type. Note that the item details have been saved, so the name at the top of the window has changed. This will continue to be the example in the following sections.
 
@@ -48,7 +48,7 @@ Above, you can see what the window looks like after we have changed the name and
 
 By default, new item types will have no **Attributes**. These are special variables that have built-in tracking and regeneration, making them more specialized than the entity **Variables** covered in the next section. To add a new attribute, click in the text field and select ```Add new attributes```. You should see the **Edit attributes** window. Here, we will create an example, 'Durability' attribute.
 
-![Creating a new Attribute](../../img/Item/create_new_attribute.png)
+![Creating a new Attribute](img/Item/create_new_attribute.png)
 
 For a more in-depth explanation of Attributes, check out the dedicated documentation **here [attributes link]**. 
 

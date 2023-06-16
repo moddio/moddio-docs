@@ -16,9 +16,9 @@ When we talk about entity types, we are referring to the different game objects 
 
 You can see more about each entity type here:
 
-* **Unit**
-* **Item**
-* **Projectile**
+* [Unit](using-scripts/entity-types/unit.md)
+* [Item](using-scripts/entity-types/item.md)
+* [Projectile](using-scripts/entity-types/projectile.md)
 
 Another term you may hear is "Entity Scripts". You can view information about the **Script Editor** on its own page. The important thing to note is the use of the word entity. Entity scripts are the scripts that are specific to individual entities. Each entity type can have their own entity scripts. The term entity is used to note that these are not general--or global--scripts.
 

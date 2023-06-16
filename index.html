@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <!-- title here is overwritten by docsify-->
+  <title>Documentation</title>
+  <link rel="modd icon" href="img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -67,6 +69,15 @@
       themeable: {
           readyTransition : true, // default
           responsiveTables: true  // default
+      },
+      markdown: {
+        // https://marked.js.org/#/USING_PRO.md#renderer
+        renderer: {
+            image: function(href, title, text) {
+                // using title for alt="" yields null for all. using extra param text sets the correct alt=""
+                return `<img src="${href}" data-origin="${href}" alt="${text}">`
+            }
+        }
       }
     }
   </script>
