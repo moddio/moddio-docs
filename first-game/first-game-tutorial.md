@@ -18,6 +18,6 @@ Let's build a game together! Check out the video link below, or follow along wit
 1. Let's Play Together (1:32)
 
 ## Intro
-[![First Game Tutorial](../img/tutorials/intro_course_cover.jpg)](https://www.youtube.com/watch?v=MzE813qYzbA&list=PLNN5LDYTMuZjvVk3F9gc_GqPHpvLFo8ZB&ab_channel=Moddio)
+[![First Game Tutorial](img/tutorials/intro_course_cover.jpg)](https://www.youtube.com/watch?v=MzE813qYzbA&list=PLNN5LDYTMuZjvVk3F9gc_GqPHpvLFo8ZB&ab_channel=Moddio)
 
 
