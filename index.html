@@ -69,6 +69,15 @@
       themeable: {
           readyTransition : true, // default
           responsiveTables: true  // default
+      },
+      markdown: {
+        // https://marked.js.org/#/USING_PRO.md#renderer
+        renderer: {
+            image: function(href, title) {
+              console.log(title)
+                return `<img src="${href}" data-origin="${href}" alt="${title}">`
+            }
+        }
       }
     }
   </script>
