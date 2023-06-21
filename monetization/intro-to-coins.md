@@ -71,5 +71,3 @@ Games with advanced tier also have access to script actions that send Modd Coins
 
 The final way to earn Modd Coins is with the 5% bonus a creator receives each time Modd Coins are bought in their game. So if a player decides to purchase 1000 Modd Coins while playing Karmaslayers, the creator of that game receives 50 Modd Coins right away, without any skin or item purchase needed.
 
-## 
->>>>>>> Stashed changes
