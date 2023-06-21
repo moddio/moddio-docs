@@ -1,10 +1,12 @@
 # Unit
 
-Though these entities can be used for many different things, you will mostly see units as the characters in your game. When you create a new game, if you want the players controlling someone and interacting with the world, the most common way to do this would be through a unit. Let's look at the template game **Open World**. In this template, whenever a player joins, a unit is created and assigned to be controlled by the joining player.
+Though these entities can be used for many different things, you will mostly see units as the characters in your game. When you create a new game, if you want the players controlling someone and interacting with the world, the most common way to do this would be through a unit.
+
+Let's look at the template game **Open World**. In this template, whenever a player joins, a unit is created and assigned to be controlled by the joining player.
 
 ![Unit creation by script](img/unit/unit_creation.png)
 
-In this template game, the unit type is 'Homie'. In the entities tab of the editor, you can see this unit type in the list.
+Here, the unit created is of the unit type 'Homie'. You can see this unit type in the entities tab of the editor.
 
 ![Game editor's entity](img/unit/entities_list.png)
 
@@ -18,7 +20,7 @@ This section will offer descriptions of the different sections of the properties
 
 ## General
 
-The default screen you see after clicking on properties. Here you can change the name and sprite of the unit type, as well as animations, states and other customizations.
+On this screen, you can change the name and sprite of the unit type, as well as animations, states and other customizations.
 
 ![A Unit's general settings](img/unit/unit_general_settings.png)
 
@@ -27,8 +29,6 @@ The default screen you see after clicking on properties. Here you can change the
 Perhaps the most important setting under the **General** tab is **Name**. In the game editor, you will often need to access different units by their Unit Type. To find the type you are looking for, you use its name. In this example, the name of the type is "Homie".
 
 Right above this option, there is an image preview of the unit type's sprite and a link that says **Change CellSheet**. This is what you click on when you want to change the appearance of units of this type.
-
-![Preview new unit sprite](img/unit/preview_new_unit.png)
 
 In the image above, you can see the default page that is shown when you click on this link. The main tab shown is the **Assets Library**. You can select from any of these unit sprites, and the sprite for this unit type will change to the selected image. We have selected the "Robot Futuristic Human Person" image, and now the **General** tab changes slightly to what you see in the image below.
 
@@ -39,8 +39,6 @@ The other tab found when clicking on Change CellSheet is Upload from computer . 
 ![Upload from computer prompt](img/unit/computer_prompt.png)
 
 As an easy example, to upload a new image for "Homie", click on the `Upload` button and select the file from your local folders. Let's just use an image -- not a sprite sheet -- so we will leave the `Column Count` and `Row Count` options set to the default, 1.
-
-Cellsheets or "Sprite sheets" are more complex than this overview, but information about how to use them can be found here **[link to cellsheet setting tutorial page]**.
 
 When the image file is selected, the text area will display its file name to the left of the `Upload`  button. The last thing to do is click `Submit`. Then the **General** tab will appear as it did when we changed the sprite to "Robot", but it will show the image you uploaded instead.
 
@@ -57,8 +55,6 @@ By clicking in this window, but not on top of an existing state, you will find a
 When you select `Add new state`, a window will appear where you can set the details for the state. Options are provided for the state's name, animation and body.
 
 ![Right after clicking "Add New State"](img/unit/add_new_state.png)
-
-**There are also options for particles and sound. These are not working -editor note**
 
 As with selecting an existing state, creation of a new state will direct you back to the properties window for the unit type and you will be able to see the new option alongside the rest of this unit type's states.
 
@@ -84,34 +80,19 @@ What if you wanted to play the animation twice? Maybe you have an item called "t
 
 ### Body Types
 
-**this will be the same as Item/Proj-should move to its own page**
-
 This area is formatted the same as animations. The field is filled with all the body types you have assigned to this unit type. Of course, by default, there is one body type, "default". Body types are used for setting the size you want the unit to appear and how you want the unit to interact with the physics of the game.
 
 Clicking on the open space inside the list of body types will give you a list of existing body types and an option to `Add new body`. When creating a new body, a window titled **Edit bodies** will appear. You can see what this should look like below.
 
 ![The basics of bodies](img/unit/edit_body.png)
 
-There's a lot of important settings here, so lets break them down.
-* Type
-* Width and Height
-* Z-index
-* Fixedrotation
-* Bullet
-* Affected by Gravity
-* Allowsleep
-* Collides With
-* Angulardamping
-* Lineardamping
-* Rotationspeed
-* Sprite scale
-* Fixtures
+### Attributes
 
-## Attributes
+The classic example for an attribute on a unit is health. In fact, unit types will have two attributes by default, "Health" and "Speed".
 
-The classic example for an attribute on a unit is health. In fact, unit types will have two attributes by default, "Health" and "Speed". These are essentially just extra numbers that are stored on the units belonging to this unit type. Attributes and variables are similar, but there are important differences. When you set an attribute, you have additional built-in features at your disposal. The important differences are the regeneration system and the attribute bars. We will discuss these individually in a moment.
+These are essentially just extra numbers that are stored on the units belonging to this unit type. Attributes and variables are similar, but there are important differences. When you set an attribute, you have additional built-in features at your disposal. The important differences are the regeneration system and the attribute bars. We will discuss these individually in a moment.
 
-[img]![The Attribute selection setting](img/unit/attribute_selection.png)
+![The Attribute selection setting](img/unit/attribute_selection.png)
 
 Above is an image of the attributes from our unit type, "Homie". These default attributes also have default values, or numbers that the attributes are set to when the unit is created (for example right after a game server is restarted). When you create a new unit of type "Homie", the health attribute of the unit is set to 100 by default.
 
@@ -127,9 +108,6 @@ Next on the list is **Default value**. In the default attributes, remember this 
 
 We need to set some limits on our attribute to make sure its values doesn't get out of control. This is where we will use **Value range**. The two options here, `min` and `max` are used for setting the minimum and maximum values that this attribute can be. For our "Rage" attribute, the default values of 0 and 100 will work perfectly. It's easiest to understand what our "rage meter" represents if we can also think of it as a percentage. When a unit of type "Homie" is created, it is 0% angry; its "Rage" attribute is 0. Since there are now limits on this attribute, it can never be less than 0, the `min`, or greater than 100, the `max`.
 
-Under these options is a drop-down list where you can select the data type of the attribute.
-**[editors note-do we still need this? its a choice between Number or Time]**
-
 `Regeneratespeed` is the next option, and it is the first of the details that make attributes unique from "Variables". The game engine will actually allow for attributes to automatically increase or decrease as time goes on. A good general rule is that a value of 0.25 for this option will increase the attribute by about 1 per second. In the other direction, to decrease the value of an attribute by 1 per second, you would set this option to -0.25.
 
 For the "Rage" attribute, let's set it to `1`. In doing so, the "Rage" of units of type "Homie" will increase by 4 every second. Another way of looking at this would be that the attribute will automatically increase to 100 after the unit of type "Homie" has existed for 25 seconds.
@@ -142,7 +120,7 @@ Moving on, the next part of what makes attributes unique can be adjusted. The en
 
 **Shown as** is a list of four buttons that allow you to set when and where the attribute bar will be visible. The option `center bar` is different from the other choices. This is specifically an HTML attribute bar that can be displayed in the bottom center of a player's screen. For units of this unit type, only the owner player of the individual unit will see this bar. We will select it. Below you can see how a `center bar` attribute is displayed in-game.
 
-[img]![The in-game center bar display](img/unit/center_bar_in_game.png)
+![The in-game center bar display](img/unit/center_bar_in_game.png)
 
 The other options here are for attribute bars that are shown in-game, beneath the unit they belong to. Player types can have different relationsips like "hostile", "friendly", and "neutral". If we didn't want enemies to see our health bar or our "rage meter", we could leave the option `unit bar(hostile)` unselected and player types that are hostile to this unit's owner's player type would not be able to see it below the unit. Let's just enable them all for this example.
 
@@ -154,6 +132,7 @@ A true or false toggle is our next option beside the label **Display value**. He
 We don't have to show this attribute all the time, though. This is how the next option, `Show When`, is used.
 
 The drop-down list has four options:
+
 * `all the time`: Used if you *always* want to show the attribute bar
 * `value changes`: Show the attribute bar briefly whenever the value changes
 * `value is greater than min value`: Disable visibility of attribute bar when value is at the minimum
@@ -189,7 +168,7 @@ The new variable creation window, titled **Add Variable**, provides three custom
 
 That's it! Now we have a variable on our unit type that we can access within our scripts. There are many different data types that you can set when creating a new variable, so let's look at these briefly.
 
-[img]![Different data types for entity variables](img/unit/different_variable_types.png)
+![Different data types for entity variables](img/unit/different_variable_types.png)
 
 Since we don't need to display the data as a bar or do regeneration math on it every tick of the engine, we have a lot more freedom. While attributes could only be numbers, these variables can store whatever type of data you want. Some of these options can be left for a more advanced tutorial, but let's look at the simple and more common options.
 
@@ -197,7 +176,7 @@ We know what `number` is, so the next choice is `boolean`. Boolean is a data typ
 
 That's all for the introduction to variables, but more advanced information can be found here. **[link to adv. variables] edit this**
 
-## Inventory and Backpack Size
+### Inventory and Backpack Size
 
 The next to options under general settings define the unit type's ability to store items. There are two different locations that items can be stored on a unit, and they are both built in to the game engine.
 
@@ -207,7 +186,7 @@ Units have an inventory and a backpack. Inventory is directly accessible through
 
 `Backpacksize` sets how many storage slots units of this unit type will have in addition to its inventory. The default setting is 0. This will hide the "Backpack" button in game. Set it to `9` and let's look at what happens.
 
-[img]![The unit backpack display](img/unit/backpack_display.png)
+![The unit backpack display](img/unit/backpack_display.png)
 
 Now there is a button, `Backpack`. When clicked, you see the image above. Items can be dragged between the inventory and the backpack with your mouse. If a unit's inventory is full, but there is space in the backpack, items will automatically fill out these slots!
 
@@ -221,12 +200,6 @@ The "Open World" template game doesn't start with any items, so we'll visit a di
 
 In the "Battle Royale" template, you can see that there are two items included in the "Fighter" unit type's Default Items . The first, "Uzi" is created in this unit's first inventory slot. The "Baseball Bat" can be found in the second.
 
-**Some kind of General settings outro.**
-
-*maybe some links to the more advanced tutorials*
-
-*maybe a logical flow now to Items.*
-
 ## Controls and Abilities
 
 Although the name of the section is "Abilities & Controls", this section of the properties tab in the editor is called "Controls." In case you are looking for "Abilities", we have added it here because this is where you will find it. This is the home of *how* the unit type interacts with the world. You can set how the unit moves and add custom keybinds, or abilities, that can be linked to scripts.
@@ -239,7 +212,7 @@ In this area, you can find all of the existing keybindings in the game. Note tha
 
 Each blue rectangle corresponds to a specific key or mouse action. The first part of each item is what user action the ability will be linked to. In the example, the first keybind is connected to the `B` key. Next, you will see that you can set scripts for both the `KeyDown` and `KeyUp` events for the connected key or mouse button.
 
-* `KeyDown` refers to pressing a key down (pushing it)
+* `KeyDown` triggers when the key is pressed down
 * `KeyUp` triggers when the key is released again
 
 In the second item, when Mouse left click  is held down, the `start using item` script runs. When `Mouse left click` is released, the `stop using item` script runs. If there is no script tied to a key action, the setting will display `undefined`.
@@ -264,17 +237,13 @@ Don't worry about what this script actually does. We are mostly using it as a pl
 
 Since this ability costs 100 "Rage", it can only be used when the unit has a full "Rage" attribute. (The maximum value for "Rage" is 100). Costs are built in, so if the unit can afford the cost, the amount will be automatically removed from the desired attribute. In case the unit can not afford the cost, the user action is ignored and the corresponding script will not run.
 
-We also have the option of connecting **Player Attributes** to be used as ability costs. They work the exact same way, so we won't cover them here. If you want to know more about player attributes, they are discussed in more detail **[here (link to player attributes)]**.
-
-**[should we remove the `Quantity` option from these `Cost` settings?]**
+We also have the option of connecting **Player Attributes** to be used as ability costs. They work the exact same way, so we won't cover them here.
 
 ### Movement method
 
 The physics simulation of the game engine allows for a few different options that control how it calculates movement of a unit. `Velocity` is the default setting for the "Homie" unit type in the "Open World" template. This is the simplest movement method, where the physics engine assigns a speed that the unit is moving in a certain direction. A new velocity overwrites the previous velocity of a unit, so a unit using this movement method can turn immediately.
 
-Another way movement can be simulated is through the application of `Force`. Here, instead of the physics engine assigning a velocity for the unit, the engine will move the unit as if a force was pushing it in the movement direction. This option is better for games where you will have other forces acting on the unit like gravity in platformer games or explosions from rockets. When applying a force in the opposite direction that a unit was moving previously, the force will first cancel out the previous velocity of the unit before it can move into the direction applied. 
-
-**[really should figure out what to say for impulse. don't think it even works]**
+Another way movement can be simulated is through the application of `Force`. Here, instead of the physics engine assigning a velocity for the unit, the engine will move the unit as if a force was pushing it in the movement direction. This option is better for games where you will have other forces acting on the unit like gravity in platformer games or explosions from rockets. When applying a force in the opposite direction that a unit was moving previously, the force will first cancel out the previous velocity of the unit before it can move into the direction applied.
 
 There will also be times where you have a unit type that you don't want to move at all. Maybe you only want its movement to be controlled by scripts. `This unit will not move` is provided as an option.
 
@@ -289,8 +258,6 @@ You don't just have to rely on a keyboard for movement controls. A third setting
 For certain cases, it may be useful to disable movement controls altogether. There is an option called `None` for these unit types.
 
 ### Absolute Rotation
-
-**[this section needs work]**
 
 Units of this unit type can be set to rotate through a full 360 degree range by enabling this setting. Based on the perspective of your game (for example if it uses a top-down camera angle) you may want the unit to be able to face any direction. In a different situation, you may have a platformer game that has a unit type you want to be able to rotate. How about a ball? Enabling this setting will allow the unit to rotate freely allowing for the ball to "roll" around in response to forces.
 
@@ -320,13 +287,9 @@ Items on the left can be clicked. Doing so will remove the ability from the list
 
 Its important to add new keybinds to the mobile interface. If not provided, mobile players will not be able to use the abilities that are controlled by these buttons. A good mobile layout is functional and not obstructing, meaning that its easy to control the unit and the buttons don't block too much of the player's view.
 
-**[what does Look and Fire Wheel do?]**
-
 ## AI
 
 Units are not just for human players. The AI or computers in your game can also control and be assigned units. This section of properties features settings used to customize how AI can control this unit type
-
-[img]
 
 ### Enable AI
 
@@ -335,7 +298,6 @@ By default, unit AI is disabled on unit types. When set to `false`, most configu
 Attack Response to Hostile Units
 
 If set to `None`, these units will do nothing when attacked by units controlled by players that are hostile to the unit's owner. Whether the interaction is `hostile` is determined by the relationship between the players that own the units. A player can be a human or a computer. For more information about these details, check out the **Diplomacy** section of the documentation for **Player Types**.
-**[link to Player Types here]**
 
 The `Flee` option will have units of this unit type try to get away from the unit that is attacking it. You could do the opposite with the `Fight` option. These units will respond to attacks by targeting the hostile unit and trying to use its selected item against them.
 
@@ -350,8 +312,6 @@ After the AI unit has been alerted to something happening in game, you may not w
 ### Max Attack Range
 
 If units of this unit type have some sort of ranged weapon or item, a limit can be set on the maximum distance from its target to attack. This unit could use the weapon from whatever distance away from the target it can as long as it hasn't been told to `Let go`. If we set a limit with this option, once the distance between this unit and the target is greater than this number, the AI unit will no longer be able to attack.
-
-**[weak section- revise]**
 
 ### Max Chase/Flee Distance
 
@@ -368,6 +328,7 @@ A radius is the distance from the center of a circle to any point on its edge. *
 ### Sensor Response to Hostile Units
 
 When the physics simulation records a unit entering the sensor radius of a unit of this unit type, the AI unit will respond in a few different ways. Setting this value to `None` would result in the unit doing nothing when a hostile unit enters its sensor. In the same way, we set **Attack Response**, we also have the options for `Flee` and `Fight`reactions.
+
 * `Flee`: Unit will try to escape the attacker
 * `Fight`: Unit will use its selected item against the unit that entered its sensor
 
