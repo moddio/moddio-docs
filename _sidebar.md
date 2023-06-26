@@ -51,5 +51,3 @@
 ---
 
 * [Credits](credits.md)
-
-* [Getting Started](/getting-started/getting-started.md)

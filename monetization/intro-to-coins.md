@@ -23,8 +23,6 @@ You can find the option to cash out by going to the top right corner where your 
 If you have enough Modd Coins to cash out, you will be able to click on the **Request Payout** button and request a payout.
 
 
-
-
 ## Uses for Modd Coins
 
 ### Unit Skins
