@@ -40,7 +40,7 @@
 ---
 
 * [Learn with Guides](guides/guides.md)
-  * [Tutorials](guides/tutorials-list.md)
+  * [Open Source Games](guides/open-source.md)
 
 ---
 
