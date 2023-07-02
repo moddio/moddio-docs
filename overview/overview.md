@@ -6,6 +6,18 @@ Welcome to Moddio, the premier 2D game development platform! These Docs are desi
 
 Moddio is more than just a game development platform—it's a thriving community of creators and players united by a shared passion for gaming. Our mission is to make game development accessible to everyone, irrespective of their technical expertise. Whether you're looking to create educational games for your students, action-packed adventures with friends, or immersive RPGs with groups, Moddio offers a versatile game editor to bring your vision to life.
 
+## Getting Started with Game Development
+
+Here are your first steps to making a game:
+
+1. Create a Moddio Account: Visit www.modd.io and sign up for a free account.
+2. Access the Moddio Editor: Go to the **Create** tab at the top to get started building. As a browser-based platform, there's no need to download anything! Once you're logged in, you can directly access the editor and start creating. 
+3. Choose a Template or Start from Scratch: Moddio offers a variety of templates to help you get started. If you prefer, you can also start from scratch using the **Open World** template, and let your creativity run wild. Make sure you check out our **Guided Tutorial** to understand the editor and make your first guided game (or visit the [First Game page](../first-game/making-first-game.md)) - we'll take you step-by-step through the process.
+4. Explore the Workspaces: Familiarize yourself with the Play, Map, Entities, and Report workspaces. Understand their functions and the tools available in each. (Check out our [Interface overview](interface.md) for more)
+5. Start Creating: Start with simple tasks like designing a map or creating an entity, and then gradually move on to more complex tasks such as scripting game mechanics.
+
+Remember, game development is an iterative process, and Moddio and our community are here to support you every step of the way.
+
 ## Game Editor Overview
 
 Moddio game development is meant to be a multiplayer experience so that it's fun and collaborative to make a game.
@@ -18,51 +30,17 @@ Since the editor is in active development, we suggest you **make frequent backup
 
 ### General Usage:
 
-The top bar allows you to switch between **4 different workspaces**:
+The top bar allows you to switch between **4 different workspaces** (A more in-depth description of each can be found in [Interface](interface.md))
 
-*   Map Editor: You can edit the map here. You have access to tools, a layer selector and a tile picker.
+*   Editor: You can access setting and export/import JSON files
+
+*   Map: You can edit the map here. You have access to tools, a layer selector and a tile picker.
 
 *   Entities: Allows you to inspect and edit scripts. Most changes here require a republish to take effect.
 
-*   Moderate: Use this workspace to ban/kick/mute players.
+*   Report: Allows you to inspect performance reports and server issues.
 
-*   Debug: Allows you to inspect the games variables and performance reports.
-
-The **Menu** dropdown in the upper left corner gives you access to the Game Settings and allows you to make a backup.
-
-### Map Editor:
-
-In the Map Editor workspace you'll see:
-
-*   **Tools and Size Buttons**
-
-    *   The **Cursor Tool** allows you to interact with any regions or entities on the map with a **Left Click**.
-
-    *   The **Region Tool** allows you to create regions. These can be used in Scripts, such as allowing actions and events to occur within defined regions.
-
-    *   The **Stamp Brush** acts like a brush. It allows you place your current selected tile selection on the Map with a **Left Click**.    
-
-    *   The **Eraser** erases your current tile selection. It's useful for removing tiles.
-
-    *   The **1x1** and **2x2** selections allow you to change the size of your brush.
-
-*   **Layer Toggle** is under the tools. Layers are ordered from top to bottom, so Trees are always on top of Walls and the Floor layers.  You can switch layers by clicking on the layer of your choice. You are always working on the selected layer and any changes using the tools will occur on that layer.
-
-*   **Tile Picker** is in the bottom corner. You can toggle the Tile Picker on or off by clicking on **palette** or pressing the **tab** key. When expanded, you can select tiles within the palette to place on the map.
-
-**Right click** on the map will copy the tiles your cursor is currently on top of, including any empty tiles.
-
-## Getting Started with Game Development
-
-Here are your first steps to making a game:
-
-1. Create a Moddio Account: Visit www.modd.io and sign up for a free account.
-2. Access the Moddio Editor: As a browser-based platform, there's no need to download anything! Once you're logged in, you can directly access the editor and start creating.
-3. Choose a Template or Start from Scratch: Moddio offers a variety of templates to help you get started. If you prefer, you can also start from scratch using the **Open World** template, and let your creativity run wild. Make sure you check out our **Guided Tutorial** to understand the editor and make your first guided game.
-4. Explore the Workspaces: Familiarize yourself with the Play, Map, Entities, and Report tabs described above. Understand their functions and the tools available in each.
-5. Start Creating: Start with simple tasks like designing a map or creating an entity, and then gradually move on to more complex tasks such as scripting game mechanics.
-
-Remember, game development is an iterative process, and Moddio and our community are here to support you every step of the way.
+The Hamburger Menu dropdown in the upper left corner gives you access to the general information about your game and game settings.
 
 ## Inspiring Examples of Games Created Using Moddio
 
