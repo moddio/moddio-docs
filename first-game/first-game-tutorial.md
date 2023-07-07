@@ -1,6 +1,6 @@
 # Making Your First Game
 
-Let's build a game together! Check out the video link below, or follow along with the text. This tutorial guide is split into 13 videos and is about 20 minutes in length.
+Let's build a game together! Check out the video link below. This tutorial guide is split into 13 videos and is about 20 minutes in length.
 
 ## Video Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MzE813qYzbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
