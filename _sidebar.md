@@ -12,7 +12,7 @@
 
 * **Create**
 
-  * [Entity Types](using-scripts/entity-types/entity-types.md)
+  * [Entities](using-scripts/entity-types/entity-types.md)
     * [Unit](using-scripts/entity-types/unit.md)
     * [Item](using-scripts/entity-types/item.md)
     * [Projectile](using-scripts/entity-types/projectile.md)
