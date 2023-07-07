@@ -1,16 +1,16 @@
 <!-- docs/_sidebar.md -->
 
 <!-- markdownlint-disable-next-line MD041 -->
-* [Home](/)
-* [How to contribute](how-to-contribute.md)
-* [Creator Basics](/overview/overview.md)
-* [Make Your First Game](first-game/making-first-game.md)
-  * [Interface](overview/interface.md)
-  * [Making Your First Game](first-game/first-game-tutorial.md)
+* **Overview**
 
----
+  * [Home](/)
+  * [How to contribute](how-to-contribute.md)
+  * [Creator Basics](/overview/overview.md)
+  * [Make Your First Game](first-game/making-first-game.md)
+    * [Interface](overview/interface.md)
+    * [Making Your First Game](first-game/first-game-tutorial.md)
 
-* How to Use Scripts
+* **Create**
 
   * [Entity Types](using-scripts/entity-types/entity-types.md)
     * [Unit](using-scripts/entity-types/unit.md)
@@ -32,19 +32,16 @@
   * [Attributes](using-scripts/attributes/attributes.md)
   * [Entity Variables](using-scripts/entity-variables/entity-variables.md)
   * [States](using-scripts/states/states.md)
-* Monetization
 
+* **Monetization**
   * [Creator Coins Guidelines](creator-coin-guideline.md)
   * [Intro to Modd Coins](monetization/intro-to-coins.md)
 
----
+* **Learn**
+  * [Learn with Guides](guides/guides.md)
+    * [Open Source Games](guides/open-source.md)
 
-* [Learn with Guides](guides/guides.md)
-  * [Open Source Games](guides/open-source.md)
-
----
-
-* Additional Resources
+* **Resources**
   * [Art Resources](more-resources/art-links.md)
   * [Guide to Tiled](more-resources/tiled.md)
 
