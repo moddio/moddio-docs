@@ -4,7 +4,7 @@ Welcome to Moddio, the premier 2D game development platform! These Docs are desi
 
 ## Understanding Moddio as a Game Development Platform
 
-Moddio is more than just a game development platform—it's a thriving community of creators and players united by a shared passion for gaming. Our mission is to make game development accessible to everyone, irrespective of their technical expertise. Whether you're looking to create educational games for your students, action-packed adventures with friends, or immersive RPGs with groups, Moddio offers a versatile game editor to bring your vision to life.
+Moddio is more than a game development platform. It's a thriving community of creators and players who share a passion for gaming. Our mission is to make game development accessible to everyone, regardless of their technical expertise. With Moddio's versatile game editor, you can bring your vision to life, whether it's educational games, action-packed adventures, or immersive RPGs.
 
 ## Getting Started with Game Development
 
