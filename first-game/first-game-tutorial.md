@@ -2,7 +2,11 @@
 
 Let's build a game together! Check out the video link below, or follow along with the text. This tutorial guide is split into 13 videos and is about 20 minutes in length.
 
-## Tutorial Overview
+## Video Tutorial
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MzE813qYzbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Chapters
+
 1. Intro (0:31)
 1. Navigating the Editor (0:51)
 1. Making the Map Bigger (0:28)
@@ -16,8 +20,3 @@ Let's build a game together! Check out the video link below, or follow along wit
 1. Respawning Chickens (2:59)
 1. Earning Points (2:58)
 1. Let's Play Together (1:32)
-
-## Intro
-[![First Game Tutorial](img/tutorials/intro_course_cover.jpg)](https://www.youtube.com/watch?v=MzE813qYzbA&list=PLNN5LDYTMuZjvVk3F9gc_GqPHpvLFo8ZB&ab_channel=Moddio)
-
-
