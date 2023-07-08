@@ -58,39 +58,101 @@ Next, the ```Default value``` and ```Value range``` settings allow us to set the
 
 ```Datatype``` gives us the ability to choose whether this attribute should be considered a ```Number``` or a ```Time``` value. Given the built-in processing included with attributes, unlike variables, they are more limited in data type.
 
-**I think we should remove TIME attributes**
-
 ### Variables
+
+Variables let you store data for an item. You can change the value with scripting, then access the variable later to check what the current value is.
+
+You can store different types of variables, such as numbers, positions and item types.
+
+Variables are shared across all entities, but each entity will have a unique value.
+
+New variables can be added from here as well.
 
 ### Inventory Icon
 
+The inventory icon can be used to override the image shown for the item in the UI.
+If empty, it will use the default cell sheet.
+
 ### Type
+
+There are 3 different types of items, which you can set here:
+
+* **weapon** - use this if the item is a weapon such as a melee weapon or a ranged weapon.
+* **consumable** - consumable items can be used. When the item is used, it can have an effect, and can optionally be used and remove from the inventory.
+* **unusable** - unusable items are miscellaneous and can't be used for anything. However, they could be used in other situations, for example if you want a team in the game to capture an item and bring it back to their base to win the game.
 
 ### States
 
+States for items can be changed.
+Once an item state changes, it can also affect the animation, body, particle and sound effect for the item.
+
+There are a few default states that are automatically created for the item and used in different scenarios:
+
+* **dropped** - active when the item lies on the ground.
+* **selected** - active when the item is currently selected and equipped in a units inventory.
+* **unselected** - active when the item is in a units inventory, but is not currently equipped.
+
+Item states can either be changed manually, or automatically in the game.
+
 ### Animations
+
+Animations define what sprite frames will be rendered in a certain state, as well as the speed between each frame change, and whether the animation loops or not.
+
+Default animations are created automatically for items as well (dropped, selected).
 
 ### Body Types
 
-### Quantity
+Body types are important to the item because they describe the physical properties of the item.
+Different body types can be associated with different item states.
+You can change things such as the collision width, height, gravity of the item, which entity types the item collides with and so on.
+
+### Default Quantity
+
+The default item quantity sets how many of the item will be given by default in the same item slot.
+If you have a pistol, it would be how many rounds the pistol has in its magazine.
+
+### Max Quantity
+
+The max item quantity sets what the maximum quantity can be for the item.
+By default, this is infinite.
 
 ### Description
 
+The item description should describe what this item is.
+It will be shown in places such as the shop, when you're buying the item.
+
 ### Can be Carried/Used By
+
+This setting can be used to control which units can pick up and use this item. 
+Defaults to everyone when empty.
 
 ## Controls
 
 ### Permitted Inventory Slots
 
+Can be changed to only let the item be added to one or more specific inventory slots.
+This is useful if you for example only want primary weapons to be in the first slot, secondary weapons in the second slot, and miscellaneous items in the third slot.
+By default it will let the item be added to any inventory slot.
+
 ### Unit Cannot Drop this Item
+
+If set to true, it will not be possible for the unit holding this item to drop the item.
 
 ### Can Merge
 
+If set to true, items can be merged with each other into the same inventory slot when a unit is already holding an item of the same type when picking up a new one.
+
 ### Backpack Allowed
+
+If set to true, this item can be added to the backpack of a unit. Otherwise, it can only be added to the inventory bar of the unit.
 
 ### Flip Sprite Horizontally with Mouse
 
+If set to true, the item texture will flip horizontally when the unit aims to the left.
+
 ### Rotate to Face Mouse Cursor
+
+If set to true, the item will always face the mouse cursor.
 
 ## Weapon (Ranged)
 
