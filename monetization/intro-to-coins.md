@@ -1,6 +1,6 @@
 # Introduction to Modd Coins
 
-<<<<<<< Updated upstream
+*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
 ## Monetization with Modd Coins
 
 Modd Coins are our in-game currency, and you can use them to monetize your games. You can add skins, items, ads, and more for purchase in your games, and cash out your Modd Coins for real money. Here's how it works:
@@ -8,8 +8,6 @@ Modd Coins are our in-game currency, and you can use them to monetize your games
 - Modd Coins for Cash: You earn coins for every transaction within your game, and Moddio takes a 10% transaction fee. You can convert your Modd Coins directly into real money, with a minimum payout amount of $20. Payments are currently made via Paypal, with more payment options coming soon.
 - Using Modd Coins in Your Games: Modd Coins are a great way to offer in-game skins and items and make your game more fun and engaging over the long term. You decide how much skins or items sell for, or you can add coin prizes as a way to incentivize players.
 - Allow Ads in Your Games: You can add video ads into your games and earn coins. You can specify when they’re shown to players in order to provide the best experience - for example, in between game rounds. This provides another avenue to monetize your games without your players spending money.
-=======
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
 
 
 ## Monetization with Modd Coins
@@ -20,7 +18,6 @@ Because they can be cashed out for money, Modd Coins are the primary way for cre
 - **Modd Coins for Cash:** You earn coins for every transaction within your game, and Moddio takes a 10% transaction fee. You can convert your Modd Coins directly into real money, with a minimum payout amount of $20. Payments are currently made via Paypal, with more payment options coming soon.
 - **Using Modd Coins in Your Games:** Modd Coins are a great way to offer in-game skins and items and make your game more fun and engaging over the long term. You decide how much skins or items sell for, or you can add coin prizes as a way to incentivize players.
 - **Allow Ads in Your Games:** You can add video ads into your games and earn coins. You can specify when they’re shown to players in order to provide the best experience - for example, in between game rounds. This provides another avenue to monetize your games without your players spending money.
->>>>>>> Stashed changes
 
 Modd Coins provide a way to generate income from your creativity and hard work, enriching your game development journey on Moddio.
 
@@ -31,7 +28,6 @@ You can find the option to cash out by going to the top right corner where your 
 
 ![Coin Transactions Tab](../img/coins/settings_coins_tab.png)
 
-<<<<<<< Updated upstream
 If you have enough Modd Coins to cash out, you will be able to click on the **Request Payout** button and request a payout.
 =======
 If you have enough Modd Coins to cash out, you will be able to click on the **Request Payout** button and request a payout.
@@ -55,7 +51,7 @@ Each transaction has a **10% fee**, so if the creator splits the earnings with t
 
 ### Game Items
 
-Once a game reaches advanced tier, creators can charge Modd Coin for items they are selling in shops. It's up to the creators to decide what the benefit of these items is. In [Karmaslayers](ks_link), players can purchase crafting materials, powerful items and strong single-use items like Rebirth:
+Once a game reaches advanced tier, creators can charge Modd Coin for items they are selling in shops. It's up to the creators to decide what the benefit of these items is. In [Karmaslayers](https://www.modd.io/play/karmaslayers), players can purchase crafting materials, powerful items and strong single-use items like Rebirth:
 
 ![Karmaslayers coin shop](../../img/coins/coinshop.png)
 
@@ -84,5 +80,3 @@ Games with advanced tier also have access to script actions that send Modd Coins
 ### Creator Coin Purchase Bonus
 
 The final way to earn Modd Coins is with the 5% bonus a creator receives each time Modd Coins are bought in their game. So if a player decides to purchase 1000 Modd Coins while playing Karmaslayers, the creator of that game receives 50 Modd Coins right away, without any skin or item purchase needed.
-
->>>>>>> Stashed changes
