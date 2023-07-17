@@ -40,7 +40,7 @@
   * [Intro to Modd Coins](monetization/intro-to-coins.md)
 
 * **Moderation**
-  * [Roles & Permissions](moderation/Roles.md)
+  * [Roles & Permissions](moderation/roles.md)
 
 * **Learn**
   * [Learn with Guides](guides/guides.md)
