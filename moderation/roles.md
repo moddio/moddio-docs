@@ -5,7 +5,7 @@ One of the ways you can manage and foster your game's community is by maintainin
 ## What are Roles?
 Roles allow creators to set specific permissions and privileges in their game. Permissions range from basic features like allowing players to chat in the game's server chat to advanced permissions like editing the game map. You can create and edit Roles in the Moderation window and assign members and permissions to individual roles.
 
-Roles also have a visual impact: the color of the player's nametag is displayed with the color of the highest role they are a member of.
+Roles also have a visual impact: the color of the player's nametag in chats is displayed with the color of the highest role they are a member of.
 
 ## Setting Up Roles
 
@@ -42,9 +42,6 @@ If you are interested in collaborating with another creator to create a game, th
 * (Re-)Publishing
 * Announcements
 
-#### VIP
-The VIP role is a default role meant to streamline the creation of special in-game privileges to players that are part of it. A later part of this guide will teach you how to assign the VIP role using scripts as well as give access to a "VIP area" to all users that have the role.
-By default, the VIP role does not give any extra permissions to users.
 
 ## Creating And Assigning A Custom Role:
 
@@ -56,20 +53,21 @@ When you first create your game there are only the built-in roles. These should 
 >As the owner of your game you will always have access to editing any aspect of your game. Some administrative actions like deleting your game can not be assigned to anyone but the game owner for security reasons.
 
 1. Press on the hammer icon next to the hamburger menu in the top left of your game. This will open the Moderation window.
-2. Select the Roles tab, then press 'Create Role'.
-	[ gif ]
+2. Select the Roles tab, then press 'Add Role'.
+
+![add a new role](../img/moderation/1add.gif)
 
 ### Step 2: Customize Role And Permissions
 
 1. Give your new role a name and a color. The role color determines what color the username of members will be displayed as in the game chat.
-	![[Pasted image 20230711161513.png]]
- 2. Select the **Permissions** tab of the newly created role to see the list of available permissions you can assign to this role.
- 3. Consider what you want the members of this role to be able to do when assigning permissions.
- 4. **Save** the changes you've made to this role!
+2. Select the **Permissions** tab of the newly created role to see the list of available permissions you can assign to this role.
+3. Consider what you want the members of this role to be able to do when assigning permissions.
+4. **Save** the changes you've made to this role!
 
-#### Assign Members To Role
+![customize role](../img/moderation/2edit.gif)
+
+
+### Step 3: Assign Members To Role
 You can press on the **Members** tab of your role to assign members manually by entering their name. 
 
-
-You can also assign roles from a user's context menu. The context menu is accessible by pressing on a user in game chat. If 'Right Click Context Menu' is enabled in the game settings, you can also right-click any player character to open it.
-![[Pasted image 20230711162453.png]]
+![add members](../img/moderation/3addmember.gif)
