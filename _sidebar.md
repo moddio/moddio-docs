@@ -3,8 +3,8 @@
 <!-- markdownlint-disable-next-line MD041 -->
 * **Overview**
 
-  * [Home](/)
-  * [How to contribute](how-to-contribute.md)
+  * [Home](home.md)
+  * [How to contribute](README.md)
   * [Creator Basics](/overview/overview.md)
   * [Make Your First Game](first-game/making-first-game.md)
     * [Interface](overview/interface.md)
