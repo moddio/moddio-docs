@@ -1,12 +1,9 @@
-# We need contributors, and we are also hiring
+# How our documentation works
 
-First, join our [Discord](https://discord.gg/XRe8T7K) :mechanical_arm:
+This entire documentation is produced from this github repo: https://github.com/moddio/moddio-docs
+Merging PR's in there will update this documentation immediately.
 
-## Game Engine Contribution
-
-  Our Game Engine, [Taro Engine](https://github.com/moddio/taro2) is completely free and open source under the MIT license. We are always looking for more help from the community. PR's are always welcomed.
-
-## Documentation Contribution
+# Running documentation in a local machine
 
 We use [docsify](https://docsify.js.org/#/) as a framework for our docs.
 
@@ -22,6 +19,19 @@ To run our doc locally, clone [our repo](https://github.com/moddio/moddio-docs) 
 docsify serve
 ```
 
-While this server is running, you can view the docs locally by navigating to `localhost:3000` on your web browser. There is no need to restart the docsify server. The changes will reflect after saving the files.
+The changes will reflect immediately after saving the files. There is no need to restart the docsify server. 
 
-Once you make modifications, please submit your PR, and someone from our core team will review.
+
+# How to contribute
+
+First, join our [Discord](https://discord.gg/XRe8T7K) server.
+
+Follow the steps above, run documentation locally and make changes as you deem necessary.
+
+Then, submit your PR to our [github repo](https://github.com/moddio/moddio-docs), and someone from our core team will review.
+
+# Game Engine Contribution
+
+  Our Game Engine, [Taro Engine](https://github.com/moddio/taro2) is completely free and open source under the MIT license. 
+  
+  We are always looking for more help from the community. PR's are always welcomed.
