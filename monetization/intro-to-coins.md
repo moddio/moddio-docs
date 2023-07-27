@@ -1,6 +1,6 @@
 # Introduction to Modd Coins
 
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+*This page needs help. Find out how to contribute [here](../../README.md)*
 ## Monetization with Modd Coins
 
 Modd Coins are our in-game currency, and you can use them to monetize your games. You can add skins, items, ads, and more for purchase in your games, and cash out your Modd Coins for real money. Here's how it works:

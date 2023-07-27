@@ -1,6 +1,6 @@
 # Item
 
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+*This page needs help. Find out how to contribute [here](../../README.md)*
 
 Unit interactions are not limited to abilities. Items can be used to further a units capabilities and give more specific actions to the game and its players. These can be weapons, trinkets, armors, and consumables. Anything that a unit can possess or hold is best outlined with an **Item Type**.
 

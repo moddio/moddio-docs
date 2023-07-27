@@ -1,6 +1,6 @@
 # States
 
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+*This page needs help. Find out how to contribute [here](../../README.md)*
 
 When controlling how the entities in a game interact and behave, there are specific adjustments you can make to customize things like animations, bodies, and sound. **States** can do all of this, but in a more powerful and easier to manage system. You can create a combination of these settings and define them in a state. When you want your entity to have these behaviours, a script action can change the state of the entity.
 

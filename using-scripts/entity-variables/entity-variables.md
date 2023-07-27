@@ -1,6 +1,6 @@
 # Entity Variables
 
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+*This page needs help. Find out how to contribute [here](../../README.md)*
 
 Entity variables are variables that belong to a specific entity, not to be confused with player variables. **[link text to Player Variables page]** Entity variables can only be used in the scope of that entity's scripts. Don't confuse these with player variables, which are different.
 

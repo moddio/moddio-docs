@@ -1,6 +1,6 @@
 # World
 
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+*This page needs help. Find out how to contribute [here](../../README.md)*
 
 The world includes the following: 
 * **Game Dialogues**

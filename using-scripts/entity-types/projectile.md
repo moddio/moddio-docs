@@ -1,6 +1,6 @@
 # Projectile 
 
-*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+*This page needs help. Find out how to contribute [here](../../README.md)*
 
 ## Asset Selection
 
