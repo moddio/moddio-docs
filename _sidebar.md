@@ -12,6 +12,11 @@
 
 * **Create**
 
+  * Workspaces
+    * [Map](workspaces/map-editor.md)
+    * [UI](workspaces/UI-editor.md)
+    * [Reports](workspaces/reports.md)
+
   * [Entities](using-scripts/entity-types/entity-types.md)
     * [Unit](using-scripts/entity-types/unit.md)
     * [Item](using-scripts/entity-types/item.md)
@@ -25,14 +30,12 @@
     * [Global Scripts](using-scripts/script-editor/script-editor.md)
     * [Entity Scripts](using-scripts/script-editor/entity-scripts.md)
     * [Run on...](using-scripts/script-editor/run-on.md)
-  * [Map Editor](using-scripts/map-editor/map-editor.md)
   * [Animations](using-scripts/animations/animations.md)
   * [Bodies](using-scripts/bodies/bodies.md)
   * [Entity Effects](using-scripts/entity-effects/entity-effects.md)
   * [Attributes](using-scripts/attributes/attributes.md)
   * [Entity Variables](using-scripts/entity-variables/entity-variables.md)
   * [States](using-scripts/states/states.md)
-  
 ---
 
 * **Monetization**
