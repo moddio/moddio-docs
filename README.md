@@ -1,6 +1,6 @@
 # How our documentation works
 
-This entire documentation is produced from this github repo: https://github.com/moddio/moddio-docs
+This entire documentation is produced from this github repo (https://github.com/moddio/moddio-docs)
 Merging PR's in there will update this documentation immediately.
 
 # Running documentation in a local machine

@@ -49,6 +49,7 @@
 * **Resources**
   * [Art Resources](more-resources/art-links.md)
   * [Guide to Tiled](more-resources/tiled.md)
+  * [How to Report Issues](more-resources/report-issues.md)
 
 ---
 
