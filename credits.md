@@ -1,17 +1,58 @@
-Moddio's game engine, Taro Engine, is powered by the following technologies & assets:
+# Attributions
 
-- Isogenic Game Engine (https://www.isogenicengine.com/) back in 2016. Rob Evans was way ahead of his time.
+### Phaser Engine by Photon Storm
 
-- Phaser Engine by Photon Storm. Thanks Rich & the team https://github.com/photonstorm/phaser
+*MIT License (MIT),* [https://phaser.io/](https://phaser.io/)
 
-- Box2D is an iconic 2D physics engine made by Erin Catto https://github.com/erincatto/box2d
+### Isogenic Engine
 
-- Planckjs is an awesome Box2D js port done by Shakiba https://github.com/shakiba/planck.js
+*MIT License (MIT),* [https://github.com/Irrelon/ige](https://github.com/Irrelon/ige)
 
-- Kenney Assets https://www.kenney.nl/
+### Pixi.js Renderer
 
-- Pixi.js https://github.com/pixijs/pixijs
+*MIT License (MIT),* [https://github.com/pixijs/pixijs](https://github.com/pixijs/pixijs)
 
-- uWebsocket https://github.com/uNetworking/uWebSockets
+---
 
-- Docsify https://github.com/docsifyjs/docsify/
+## Physics Engines
+
+### Box2D
+
+*MIT License (MIT),* [https://github.com/erincatto/box2d](https://github.com/erincatto/box2d)
+
+### Planck JS
+
+*MIT License (MIT),* [https://github.com/piqnt/planck.js](https://github.com/piqnt/planck.js)
+
+---
+
+## Assets
+
+### Kenney Assets
+
+*public domain (CC0)*, **[https://www.kenney.nl/](https://www.kenney.nl/)  
+
+
+### Icons8
+
+attribution required, [https://icons8.com/](https://icons8.com/)
+
+### HeroIcons
+
+MIT License (MIT), [https://github.com/tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
+---
+
+## Networking
+
+### uWebsocket
+
+*Apache-2.0 license,* [https://github.com/uNetworking/uWebSockets](https://github.com/uNetworking/uWebSockets)
+
+---
+
+## Documentation
+
+### Docsify
+
+*MIT License (MIT),* [https://github.com/docsifyjs/docsify/](https://github.com/docsifyjs/docsify/)
