@@ -20,18 +20,3 @@ docsify serve
 ```
 
 The changes will reflect immediately after saving the files. There is no need to restart the docsify server. 
-
-
-# How to contribute
-
-First, join our [Discord](https://discord.gg/XRe8T7K) server.
-
-Follow the steps above, run documentation locally and make changes as you deem necessary.
-
-Then, submit your PR to our [github repo](https://github.com/moddio/moddio-docs), and someone from our core team will review.
-
-# Game Engine Contribution
-
-  Our Game Engine, [Taro Engine](https://github.com/moddio/taro2) is completely free and open source under the MIT license. 
-  
-  We are always looking for more help from the community. PR's are always welcomed.

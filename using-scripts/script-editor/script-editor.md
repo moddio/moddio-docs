@@ -13,7 +13,7 @@ With **visual scripting**, you can define how your game elements should behave w
 
 ![Example of script Actions](../../img/scripting/actions.png)
 
-Scripts are composed of [actions](https://www.modd.io/docs/functions/). [Actions](https://www.modd.io/docs/functions/) range from simple tasks like *"destroy this entity"* or *"increase \[variable\] value by \[number\]"* to more complex logic like conditionals (["if \[condition\]:"](https://www.modd.io/docs/functions/condition/)) and loops (["while \[condition\]:"](https://www.modd.io/docs/functions/while)). In Taro, script actions run in sequence from top to bottom within their respective script block.
+Scripts are composed of [actions](https://www.modd.io/docs/functions/). [Actions](https://www.modd.io/docs/functions/) range from simple tasks like *"destroy this entity"* or *"increase \[variable\] value by \[number\]"* to more complex logic like conditionals (["if \[condition\]:"](https://www.modd.io/docs/functions/condition/)) and loops (["while \[condition\]:"](https://www.modd.io/docs/functions/while)). In Moddio, script actions run in sequence from top to bottom within their respective script block.
 
 You can look up the available actions and what they do in the [API documentation](https://www.modd.io/docs/functions/).
 
@@ -22,9 +22,9 @@ You can look up the available actions and what they do in the [API documentation
 
 ![Example of script triggers](../../img/scripting/trigger.png)
 
-Taro is using an **event-driven approach** which allows you to add [triggers](https://www.modd.io/docs/triggers/) to scripts. [Triggers](https://www.modd.io/docs/triggers/) are basically events that cause the associated script Actions to run. Here's some examples of common triggers: *"when this entity is created"*, *"when a unit picks up an item"*, *"when player joins the game"*. 
+Moddio is using an **event-driven approach** which allows you to add [triggers](https://www.modd.io/docs/triggers/) to scripts. [Triggers](https://www.modd.io/docs/triggers/) are basically events that cause the associated script Actions to run. Here's some examples of common triggers: *"when this entity is created"*, *"when a unit picks up an item"*, *"when player joins the game"*. 
 
-Taro engine automatically checks at every engine step whether a trigger fulfills the conditions, then runs the associated Script. It's also possible to trigger scripts from another script (with the *"Run Script"* action) and with key/button inputs (with Unit Keybindings).
+Moddio automatically checks at every engine step whether a trigger fulfills the conditions, then runs the associated Script. It's also possible to trigger scripts from another script (with the *"Run Script"* action) and with key/button inputs (with Unit Keybindings).
 
 You can find documentation for all the available triggers in the [API documentation](https://www.modd.io/docs/triggers/).
 
@@ -67,7 +67,7 @@ To add a script action, click
 
 ### Global and entity Scripting
 
-Entities are all objects that exist in your game. Taro features 4 entity Types: World, Units, Items and Projectiles. Global scripts are part of the World entity and are often related to global triggers like 'when game starts'. 
+Entities are all objects that exist in your game. Moddio features 4 entity Types: World, Units, Items and Projectiles. Global scripts are part of the World entity and are often related to global triggers like 'when game starts'. 
 
 Entity scripts are always associated with an entity. Using entity scripts can improve the performance of your game in many cases. Here's an example: if you want to slow the movement speed of the **Homie** Unit when it enters the **Slowdown** Region with a Global Script, you would need to do the following:  
 ![Example of a World Script](../../img/scripting/global.png)

@@ -4,7 +4,7 @@
 * **Overview**
 
   * [Home](home.md)
-  * [How to contribute](README.md)
+  * [How to contribute](how-to-contribute.md)
   * [Creator Basics](/overview/overview.md)
   * [Make Your First Game](first-game/making-first-game.md)
     * [Interface](overview/interface.md)
