@@ -1,10 +1,7 @@
-<a href="https://modd.io">
-  <img src="https://www.modd.io/_next/static/media/logo.08e05f95.svg?w=3840&q=75" width="200" alt="Moddio logo">
-</a>
+# Moddio
+An open-source, multiplayer-first HTML5 Game Engine
 
-# Moddio - A Multiplayer-first Game Engine
-
-# What's included out-of-the-box:
+## What's included out-of-the-box:
 - Box2D Physics
 - Netcode using UWS and LZ-string compression
 - Inventory & item system
@@ -18,7 +15,7 @@
 - Mobile controls
 - and a bunch more...
 
-# Get Started
+## Get Started
 
 Begin by **[making your first game](first-game/making-first-game.md)**.
 
