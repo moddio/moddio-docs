@@ -3,7 +3,7 @@
 <!-- markdownlint-disable-next-line MD041 -->
 * **Overview**
 
-  * [Home](home.md)
+  * [Home](/)
   * [How to contribute](how-to-contribute.md)
   * [Creator Basics](/overview/overview.md)
   * [Make Your First Game](first-game/making-first-game.md)
