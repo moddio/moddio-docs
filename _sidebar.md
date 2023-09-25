@@ -37,6 +37,7 @@
     * [Controls](using-scripts/entity-types/item?id=controls)
   * [Projectile](using-scripts/entity-types/projectile.md)
   * [Other Data Types](using-scripts/animations/animations.md)
+    * [Abilities](using-scripts/abilities/abilities.md)
     * [Animations](using-scripts/animations/animations.md)
     * [Bodies](using-scripts/bodies/bodies.md)
     * [Entity Effects](using-scripts/entity-effects/entity-effects.md)
