@@ -1,3 +1,5 @@
+# Abilities
+
 ### Introduction
 
 The **new** abilities system is designed to expand on the old abilities system found within `Keybindings`. Previously, you would add or edit a key and within the customization for this 'ability', edit what is triggered by the key event.
