@@ -24,12 +24,12 @@ If you want to use an ability on multiple unit types, you will have to either ad
 ### The anatomy of an Ability
 
 - `Name`:  what the ability is called in the different editor windows
-- `Event scripts`:  (Optional)
-    - `Start casting`: the script ([G] Global or [E]) Entity that runs when 'start' is triggered
-    - `Stop casting`:  the script ([G] Global or [E]) Entity that runs when 'stop' is triggered
-- `Cast duration`: (Optional) if set, `stopCasting` is triggered automatically, this many milliseconds after `startCasting` was triggered
-- `Cooldown`: (Optional) if set, this ability cannot be cast again until this many milliseconds after `startCasting`
-- `Cost`: (Optional) the same attribute cost interface as the keybindings system. `startCasting` will fail to trigger if the unit does not have this amount of these attributes
-- `Stream Mode`: (Currently disabled)
+- `Event scripts`:  (*Optional*)
+    - `Start casting`: the script ([G] Global or [E] Entity) that runs when 'start' is triggered
+    - `Stop casting`:  the script ([G] Global or [E] Entity) that runs when 'stop' is triggered
+- `Cast duration`: (*Optional*) if set, `stopCasting` is triggered automatically, this many milliseconds after `startCasting` was triggered
+- `Cooldown`: (*Optional*) if set, this ability cannot be cast again until this many milliseconds after `startCasting`
+- `Cost`: (*Optional*) the same attribute cost interface as the keybindings system. `startCasting` will fail to trigger if the unit does not have this amount of these attributes
+- `Stream Mode`: (*Currently disabled*)
 - `Button visibility`: whether an icon/button is displayed for mobile, desktop, or both
-- `Icon url`: (Optional) the icon that is displayed on the ability's button.
+- `Icon url`: (*Optional*) the icon that is displayed on the ability's button.
