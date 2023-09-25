@@ -27,7 +27,7 @@
 * **[Entities](using-scripts/entity-types/entity-types.md)**
   * [Unit](using-scripts/entity-types/unit.md)
     * [General](using-scripts/entity-types/unit?id=general)
-    * [Controls and Abilities](using-scripts/entity-types/unit?id=controls-and-abilities)
+    * [Controls](using-scripts/entity-types/unit?id=controls-and-abilities)
     * [AI](using-scripts/entity-types/unit?id=ai)
     * [Effects](using-scripts/entity-types/unit?id=effects)      
     * [Extra](using-scripts/entity-types/unit?id=extra)
