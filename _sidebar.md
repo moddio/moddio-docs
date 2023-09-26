@@ -58,7 +58,7 @@
 ---
 
 * **Monetization**
-  * [Creator Coins Guidelines](creator-coin-guideline.md)
+  * [Creator Coins Guidelines](monetization/creator-coin-guideline.md)
   * [Intro to Modd Coins](monetization/intro-to-coins.md)
 
 * **Moderation**
