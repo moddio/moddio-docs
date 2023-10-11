@@ -16,6 +16,7 @@
 * [Creator Basics](/overview/overview.md)
 * [Interface](overview/interface.md)
 * [Making Your First Game](first-game/first-game-tutorial.md)
+* [Scripting Reference](https://www.modd.io/docs)
 ---
 **Game Editor**
 
