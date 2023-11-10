@@ -1,3 +1,3 @@
 # Map Editor
 
-*This page needs help. Find out how to contribute [here](../../README.md)*
+There are currently two map editors. The ingame map editor is the current map editor and is constantly being updated, while the sandbox editor is the depreciated editor.
