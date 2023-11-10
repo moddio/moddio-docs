@@ -1,6 +1,6 @@
 # Overview
 
-Adds the input into a list of banned words for the game. When a player attempts to send a message containing banned words, the banned words will be replaced. Each game starts with preset banned words which cannot be edited.
+Adds the input into a list of banned words for the game. When a player attempts to send a message containing banned words, the banned words will be replaced. Each game starts with preset banned words which cannot be edited. It supports a single word as well as a string with multiple comma-separated words.
 
 ## Example
 
