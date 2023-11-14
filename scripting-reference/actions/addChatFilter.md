@@ -9,6 +9,8 @@ List of banned words:
 - Bad
 - Word
 
+The above list can be achieved through individually adding words, or with a comma-separated string, like "Bad, Word"
+
 Player Input: "Hello there!"
 Output: "Hello there!"
 
