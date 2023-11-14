@@ -1,1 +1,1 @@
-Sets the state of the selected entity to the provided state.
+Sets the state of the specified entity to the provided state.
