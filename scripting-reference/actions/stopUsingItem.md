@@ -1,1 +1,1 @@
-Commands the unit to stop using the specified item.
+Commands the specified unit to stop using the provided item.
