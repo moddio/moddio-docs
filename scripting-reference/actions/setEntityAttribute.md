@@ -1,1 +1,1 @@
-Sets the specified attribute to whatever value is inputted. Attributes can only be numbers.
+Sets the specified attribute to the provided value. This value must be a number.
