@@ -1,6 +1,6 @@
 # Overview
 
-Takes the input and uses the floor function on it. The floor function rounds a number down to the nearest int (whole number)
+Takes the input and uses the floor function on it. The floor function rounds a number down to the nearest integer
 
 ## Example Usage
 
