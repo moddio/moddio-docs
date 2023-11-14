@@ -1,1 +1,1 @@
-Allows the specified player to talk in the ingame chat.
+Allows the specified player to talk in the in-game chat.
