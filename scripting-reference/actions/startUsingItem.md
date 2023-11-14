@@ -1,1 +1,1 @@
-Commands the unit to use the item until told to stop.
+Commands the specified unit to use the provided item until told to stop.
