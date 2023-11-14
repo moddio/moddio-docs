@@ -1,1 +1,1 @@
-Sends a chat message specifically to the selected player. The message will appear yellow.
+Sends a chat message to the provided player. The message will appear yellow.
