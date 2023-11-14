@@ -1,1 +1,1 @@
-Sets the maximum value of the selected attribute for the selected entity to the inputted number.
+Sets the maximum value of the specified attribute for the provided entity. This value must be a number.
