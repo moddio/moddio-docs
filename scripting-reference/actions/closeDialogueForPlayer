@@ -6,4 +6,4 @@ Closes whatever dialogue is currently open for the specified player.
 
 Dialogues are popups shown to a player that have text and images. Dialogues can be affected by HTML and other code for custom formatting. Each dialogue also has the options for buttons which can open another dialogue, run a script, both of those, or nothing (just close the dialogue)
 
-If a dialogue has options, it cannot be closed by pressing enter.
+If a dialogue has option(s), it cannot be closed by pressing enter.
