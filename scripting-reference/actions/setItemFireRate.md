@@ -1,1 +1,1 @@
-Changes the fire rate of the specific item provided, not all items of that type, to the provided time, in milliseconds.
+Changes the fire rate of the specified item to the provided time. This value is in milliseconds and must be an integer.
