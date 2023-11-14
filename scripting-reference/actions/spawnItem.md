@@ -1,1 +1,1 @@
-Spawns the specified item at the location provided.
+Spawns the specified item at the provided location.
