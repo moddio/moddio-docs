@@ -1,1 +1,1 @@
-Returns the quantity of the selected item, in the form of an intiger.
+Returns the quantity of the selected item, as an integer.
