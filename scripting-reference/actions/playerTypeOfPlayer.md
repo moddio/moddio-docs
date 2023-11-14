@@ -1,1 +1,1 @@
-Returns which player type the selected player is on.
+Returns the player type of the provided player.
