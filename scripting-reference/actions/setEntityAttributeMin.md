@@ -1,1 +1,1 @@
-Sets the minimum value of the selected attribute for the selected entity to the inputted number.
+Sets the minimum value of the specified attribute for the selected entity to the inputted number.
