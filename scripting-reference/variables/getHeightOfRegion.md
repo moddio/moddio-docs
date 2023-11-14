@@ -1,1 +1,1 @@
-Returns the region's height, in pixels.
+Returns the specified region's height, in pixels.
