@@ -1,6 +1,6 @@
 # Overview
 
-Plays the specified sound at the specified location.
+Plays the unique sound at the provided location.
 
 # Details
 
