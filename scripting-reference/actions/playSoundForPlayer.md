@@ -1,1 +1,1 @@
-Plays the specified sound for the specified player. This sound will not be heard by anybody else and is not positional (When the player moves from their current location the volume of the sound will not change)
+Plays the specified sound for the provided player. This sound will not be heard by anybody else and is not positional (When the player moves from their current location the volume of the sound will not change)
