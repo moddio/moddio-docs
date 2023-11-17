@@ -10,7 +10,7 @@ It is important to make this distinction. Some places in the editor will refer t
 
 Let's look for example at a **Global Script**. Don't worry if you're unsure exactly what a Global Script is, the important feature to understand is that it can interact with any part of the game, not just one specific thing.
 
-![Global script moving all entities in the game to one position, every second.](img/scripting/globalscriptentities.png)
+![Global script moving all entities in the game to one position, every second.](/img/scripting/globalscriptentities.png)
 
 In this image, you see a script referring to entities. Instead of restricting this script to only work with a certain unit or item, it is written to affect entities. Since this term isn't as specific, that means it can interact with all units, items, or projectiles that are given to the script as "arguments".
 
