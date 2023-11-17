@@ -55,6 +55,7 @@
   * [Global Scripts](using-scripts/script-editor/script-editor.md)
   * [Entity Scripts](using-scripts/script-editor/entity-scripts.md)
   * [Run on...](using-scripts/script-editor/run-on.md)
+  * [Script Editor](using-scripts/script-editor/script-editor.md)
 
 ---
 
