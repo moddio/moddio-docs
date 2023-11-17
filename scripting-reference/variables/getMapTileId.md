@@ -10,7 +10,7 @@ This block requires two inputs, an X and Y coordinate. Keep in mind that the coo
 
 ### Results
 
-An ID is where a tile is on the game's tilemap. Here is a visual example:
+An ID is where a tile is on the game's tilemap. Here is a visual example of the ID of tiles on the game's tilemap:
 
 ![tile ID display](../img/scripting/tileID.png)
 
