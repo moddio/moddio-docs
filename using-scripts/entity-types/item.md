@@ -1,7 +1,5 @@
 # Item
 
-*This page needs help. Find out how to contribute [here](../../README.md)*
-
 Unit interactions are not limited to abilities. Items can be used to further a units capabilities and give more specific actions to the game and its players. These can be weapons, trinkets, armors, and consumables. Anything that a unit can possess or hold is best outlined with an **Item Type**.
 
 There is an important distinction between **Item** and **Item Type**, and it holds true for every entity. In the game, items are the individual instances. The health potion held by my unit is a different item than the health potion held by yours; however, since they are both health potions, they are most likely the same item type. In this scenario, the **Item Type** for health potion is where we set the details for every health potion in the game.
