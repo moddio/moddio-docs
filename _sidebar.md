@@ -10,23 +10,29 @@
 
 <!-- markdownlint-disable-next-line MD041 -->
 * **Home**
+  * [What is Moddio?](/)
   * [How to contribute](how-to-contribute.md)
   * [Creator Basics](/overview/overview.md)
   * [Interface](overview/interface.md)
-  * [Scripting Reference](https://www.modd.io/docs)
+  * [Scripting Reference Docs 🔗](https://www.modd.io/docs)
 
 * **Getting Started**
   * [Making Your First Game](first-game/first-game-tutorial.md)
 
 * **Game Editor**
 
-  * [Workspace](/)
-    * [Map](workspaces/map-editor.md)
-    * [UI](workspaces/UI-editor.md)
-    * [Reports](workspaces/reports.md)
-    * [Settings](workspaces/settings.md)
+  <!-- * [Navigating the Workspace](/) -->
+  * [Map Editor](workspaces/map-editor.md)
+  * [Entities Editor](using-scripts/entity-types/entity-types.md)
+    * [World](using-scripts/world/world.md)
+      * [Global Variables](using-scripts/world/global-variables.md)
+      * [Player Types (Factions)](using-scripts/world/player-types.md)
+      * [Shops](using-scripts/world/shops.md)
+      * [Dialogues](using-scripts/world/dialogues.md)
 
-  * [Entities](using-scripts/entity-types/entity-types.md)
+    * [Script Editor](using-scripts/script-editor/script-editor.md)
+      * [Run on...](using-scripts/script-editor/run-on.md)
+  
     * [Unit](using-scripts/entity-types/unit.md)
       * [General](using-scripts/entity-types/unit?id=general)
       * [Controls and Abilities](using-scripts/entity-types/unit?id=controls-and-abilities)
@@ -46,16 +52,9 @@
       * [Attributes](using-scripts/attributes/attributes.md)
       * [Entity Variables](using-scripts/entity-variables/entity-variables.md)
       * [States](using-scripts/states/states.md)
-  * [World](using-scripts/world/world.md)
-    * [Global Variables](using-scripts/world/global-variables.md)
-    * [Player Types (Factions)](using-scripts/world/player-types.md)
-    * [Shops](using-scripts/world/shops.md)
-    * [Dialogues](using-scripts/world/dialogues.md)
-
-  * [Script Editor](using-scripts/script-editor/script-editor.md)
-    * [Global Scripts](using-scripts/script-editor/script-editor.md)
-    * [Entity Scripts](using-scripts/script-editor/entity-scripts.md)
-    * [Run on...](using-scripts/script-editor/run-on.md)
+  * [UI Editor](workspaces/UI-editor.md)
+  * [Reports](workspaces/reports.md)
+  * [Settings](workspaces/settings.md)
 
 * **Monetization**
   * [Creator Coins Guidelines](monetization/creator-coin-guideline.md)

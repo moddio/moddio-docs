@@ -217,9 +217,7 @@ main.hidden {
   text-decoration: none;
   transition: all 0.3s;
 }
-.anchor span {
-  color: #c8c8c8;
-}
+
 .anchor:hover {
   text-decoration: underline;
 }
@@ -662,17 +660,20 @@ section.cover blockquote > p > a:hover {
 .markdown-section h3,
 .markdown-section h4,
 .markdown-section strong {
-  color: #90afba;
   font-weight: 600;
 }
+
+h1 a, h2 a, h3 a{
+    color: #e1ecf0;
+}
+
 .markdown-section a {
-  color: #ea6f5a;
-  color: var(--theme-color, #ea6f5a);
   font-weight: 600;
 }
 .markdown-section h1 {
   font-size: 2rem;
-  margin: 0 0 1rem;
+  margin: 2rem 0 1rem;
+  color: #90afba
 }
 .markdown-section h2 {
   font-size: 1.75rem;
@@ -728,7 +729,7 @@ section.cover blockquote > p > a:hover {
 .markdown-section code {
   background-color: #282828;
   border-radius: 2px;
-  color: #657b83;
+  border: 1px solid #c8c8c8;
   font-family: 'Roboto Mono', Monaco, courier, monospace;
   margin: 0 2px;
   padding: 3px 5px;
