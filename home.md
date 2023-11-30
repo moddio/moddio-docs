@@ -1,23 +1,21 @@
-# Moddio
-An open-source, multiplayer-first HTML5 Game Engine
+# What is Moddio?
+Moddio is an open-source, multiplayer-focused HTML5 Game Engine designed to significantly reduce development time by providing a range of pre-built, common features, so developers don't have to reinvent wheels.
 
-## What's included out-of-the-box:
-- Box2D Physics
-- Netcode using UWS and LZ-string compression
-- Inventory & item system
-- Unit attributes (HP, Energy, etc)
-- Weapon system (melee & projectile)
-- Dialogues
-- Shops
-- Unit control (top-down WASD or platformer)
-- Client-side predicted projectile + unit movement (optional)
-- AI with attacking and pathfinding
-- Mobile controls
-- and a bunch more...
+## So what's features are included?
+- Optimized netcode using lag compensation algorithms and data compression easily supporting 100+ moving entities in a single server instance.
+- Integrated 2D physics engine (Box2D & more)
+- Free game server hosting with automatic scaling
+- Item system supporting melee & range weapons, consumable items, and wearable items
+- Fully customizable unit attribute system for displaying health, energy, etc.
+- Dialogues designed for story-driven games (e.g. visual novels)
+- Item Shop system
+- AI with built-in behaviours (idle, provoked, and enemy detection) and pathfinding
+- Mobile compability and control customization
+- and many more!
 
-## Get Started
+## How to get started
 
-Begin by **[making your first game](first-game/making-first-game.md)**.
+We recommend beginners to start from **[making your first game](first-game/making-first-game.md)** guide.
 
 Also, check out these places to learn more and get involved with the community:
 
