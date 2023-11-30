@@ -1,0 +1,1 @@
+Plays a video ad for all players in the current game. Each video ad successfully run by a player will earn the owner of the game 0.5 Modd Coins. Keep in mind that video ads can be skipped or blocked by an Ad Blocker.
