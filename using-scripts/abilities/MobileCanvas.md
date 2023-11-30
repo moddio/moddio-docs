@@ -12,7 +12,7 @@ In the in-game editor, this is what the Mobile Canvas looks like.
 
 ![Picture of the mobile canvas editor UI](/img/scripting/mobilecanvas.png)
 
-Click on a keybind, and then drag it around to where you want it to appear on the mobile view.
+Click on a keybind, and then drag it around to where you want it to appear on the mobile view. If the keybind starts an ability, the icon of that ability will be displayed instead of the keybind.
 
 ![GIF of adding keybind to mobile canvas UI](/img/scripting/mobilecanvas.gif)
 
