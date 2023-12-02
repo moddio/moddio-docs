@@ -18,6 +18,7 @@
 
 * **Getting Started**
   * [Making Your First Game](first-game/first-game-tutorial.md)
+  * [Game Templates](first-game/game-templates.md)
 
 * **Game Editor**
 
