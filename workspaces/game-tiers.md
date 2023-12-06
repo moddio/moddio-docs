@@ -24,4 +24,11 @@ This tier grants many permissions not available in Tier 1. The permissions are s
 
 # Tier 1 vs. Tier 5 Comparison
 
-![T1 vs T5 Comparison Table](/img/T1vsT5.png)
+|| Basic Tier    | Advanced Tier |
+| ------------- | ------------- | ------------- |
+| Data Saving | ✓ | ✓ |
+| Sending Modd Coins | X | ✓ |
+| Selling Items for Modd Coins | X | ✓ |
+| Advertisements | X | ✓ |
+| Thumbnails | X | ✓ |
+| Menu UI | X | ✓ |
