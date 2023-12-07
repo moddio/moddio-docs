@@ -27,8 +27,8 @@ This tier grants many permissions not available in Tier 1. The permissions are s
 || Basic Tier    | Advanced Tier |
 | ------------- | ------------- | ------------- |
 | Data Saving | ✓ | ✓ |
+| UI | ✓ | ✓ |
 | Sending Modd Coins | X | ✓ |
 | Selling Items for Modd Coins | X | ✓ |
 | Advertisements | X | ✓ |
 | Thumbnails | X | ✓ |
-| Menu UI | X | ✓ |
