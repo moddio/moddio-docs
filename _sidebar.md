@@ -33,6 +33,8 @@
 
     * [Script Editor](using-scripts/script-editor/script-editor.md)
       * [Run on...](using-scripts/script-editor/run-on.md)
+      * [Folders](using-scripts/script-editor/folders.md)
+      * [Inline Editor](using-scripts/script-editor/inline-editor.md)
   
     * [Unit](using-scripts/entity-types/unit.md)
       * [General](using-scripts/entity-types/unit?id=general)
@@ -65,6 +67,11 @@
 
 * **Moderation**
   * [Roles & Permissions](moderation/roles.md)
+ 
+* **Game Features**
+  * [Communities](workspaces/communities.md)
+  * [Game Tiers](workspaces/game-tiers.md)
+  * [Versioning](workspaces/versioning.md)
 
 * **Learn**
   * [Learn with Guides](guides/guides.md)
