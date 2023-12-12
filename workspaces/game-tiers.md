@@ -24,7 +24,7 @@ This tier grants many permissions not available in Tier 1. The permissions are s
 
 # Tier 1 vs. Tier 5 Comparison
 
-| Basic Tier    | Advanced Tier |
+| | Basic Tier    | Advanced Tier |
 | ------------- | ------------- | ------------- |
 | Data Saving | ✓ | ✓ |
 | UI | ✓ | ✓ |
