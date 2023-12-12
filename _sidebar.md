@@ -72,6 +72,7 @@
   * [Communities](workspaces/communities.md)
   * [Game Tiers](workspaces/game-tiers.md)
   * [Versioning](workspaces/versioning.md)
+  * [Standalone and Modding](workspaces/modding.md)
 
 * **Learn**
   * [Learn with Guides](guides/guides.md)
