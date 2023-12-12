@@ -15,7 +15,7 @@ Moddio is an open-source, multiplayer-focused HTML5 Game Engine designed to sign
 
 ## How to get started
 
-We recommend beginners to start from **[making your first game](first-game/making-first-game.md)** guide.
+We recommend beginners to start from **[making your first game](first-game/making-first-game.md)** guide. You can also view our **[premade game templates](first-game/game-templates.md)**.
 
 Also, check out these places to learn more and get involved with the community:
 
