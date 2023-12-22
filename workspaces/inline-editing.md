@@ -43,8 +43,8 @@ And for <code>string</code>, it's very useful to use inline-editing when u want 
 ```
 
 ## action aliases
-
-In inline-editing, we have many action aliases to simplified function calling, here is the table
+> In inline-editing, we have many action aliases to simplified function calling, here is the table  
+no worries! the complete suggestions will help you, no need to remember these aliases
 
 | Function Name | Alias |
 | --- | --- |
@@ -108,6 +108,73 @@ In inline-editing, we have many action aliases to simplified function calling, h
 | getLastAttackingItem | lastAttackingItem |
 
 You can use these aliases directly, like pos(2, 5), created a position
-> no worries! the complete suggestions will help you, no need to remember these aliases
 
 ## method & property
+> do you know the method chaining?  
+> it's something that you can call the functions one by one like in a chain
+```js
+pos(5, 6).x.abs // equals to abs(getXCoordinate(xyCoordinate(5, 6))), seems much better, right?
+```
+
+Yes, the inline-editing can help you do this thing, you only need to connect them one by one  
+You may noticed that some properties have same names
+```js
+// inline-editing can handle different data type with the same name
+// you don't need to use 'getPositionX' for pos, 'getXCoordinateOfRegion' for region
+pos(1,1).x // 1
+region(2,2,1,1).x // 2
+```
+
+here is the table of contents currently available
+
+|x|y|type|
+|---|---|---|
+|region|region|item|
+|pos|pos|unit|
+|-|-|player|
+|-|-|unitTypeGroup|
+
+## attr & var
+you can use someEntity.some_var to get the var
+someEntity.$some_attr to get the attr
+> e.g.
+```js
+// you need to define these attr or var first in entity editor
+thisEntity.deathCount
+thisEntity.$health
+```
+
+## if statement
+### && (and)
+> e.g.  
+```js
+pos(0, 1).y > 1 && thisEntity.$health != 10
+```
+### || (or)
+> e.g.  
+```js
+pos(0, 1).y > 1 || thisEntity.$health == 10
+```
+### not equal
+> e.g.  
+```js
+1 != 2
+```
+
+### equal
+> e.g.  
+```js
+1 == 1
+```
+
+### > < >=  <=
+> e.g.  
+```js
+pos(0, 1).y > 1 && thisEntity.$health <= 10
+```
+
+## playground
+you can always play in playground first, enjoy it.  
+[playground](https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs)
+<iframe style="height: 40rem" src = "https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs" >
+</iframe>
