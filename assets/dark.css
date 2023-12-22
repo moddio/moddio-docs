@@ -370,7 +370,8 @@ body.sticky .sidebar-toggle {
   border-top: 1px solid #ccc;
 }
 .markdown-section tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #aaa;
+  color: #000
 }
 .markdown-section p.tip {
   background-color: #f8f8f8;

@@ -24,13 +24,90 @@ You can copy or paste here freely, enjoy xD.
 
 And then let's start with the "hello world", the very classic one.
 ![sendChatMessage](../img/inline-editing/helloWorld.png)
-Choose the send chat message action in the drop down, change it to inline editing mode, and type "hello world", don't forget the quotes "", btw you can use '' as well, it's useful to wrap string with '', if you want to use "" in the string, like, 'once upon a time, some one said: "hello world" '
+Choose the send chat message action in the drop down, change it to inline editing mode, and type "hello world", don't forget the quotes "", btw you can use '' as well, it's useful to wrap <code>string</code> with '', if you want to use "" in the <code>string</code>, like, 'once upon a time, some one said: "hello world" '
 
-And for string, it's very useful to use inline-editing when u want to concat the string with string or number
+And for <code>string</code>, it's very useful to use inline-editing when u want to concat the <code>string</code> with <code>string</code> or <code>number</code>
 
-Try type 
+> Try type
+
 ```js
-"a random number = " + randNumber(0, 5)
+"a random <code>number</code> = " + randNumber(0, 5);
 ```
 
+> Tips  
+ Inline-editing will auto handle <code>string</code> + <code>number</code>, if the addition equation contains the <code>string</code>, the output will be <code>string</code>, and <code>number</code> + <code>number</code> will be concat as <code>string</code>
 
+```js
+1 + 1 + "hello" // "11hello"
+(1 + 1) + "hello"; // "2hello"
+```
+
+## action aliases
+
+In inline-editing, we have many action aliases to simplified function calling, here is the table
+
+| Function Name | Alias |
+| --- | --- |
+| getRandomNumberBetween | randNumber |
+| xyCoordinate | pos |
+| dynamicRegion | region |
+| mathFloor | floor |
+| squareRoot | sqrt |
+| getRandomItemTypeFromItemTypeGroup | randItemType |
+| stringToNumber | str2num |
+| getPositionY | y |
+| getPositionX | x |
+| getXCoordinateOfRegion | x |
+| getYCoordinateOfRegion | y |
+| getItemTypeOfItem | type |
+| getUnitTypeOfUnit | type |
+| playerTypeOfPlayer | type |
+| getRandomUnitTypeFromUnitTypeGroup | type |
+| undefinedValue | undefined |
+| getRandomPositionInRegion | randPos |
+| substringOf | slice |
+| absoluteValueOfNumber | abs |
+| getExponent | pow |
+| numberToString | num2str |
+| stringToObject | str2obj |
+| objectToString | obj2Str |
+| unitsFacingAngle | facingAngle |
+| getCurrentAmmoOfItem | currentAmmo |
+| changeDescriptionOfItem | changeDesc |
+| getOwnerOfItem | owner |
+| setFadingTextOfUnit | setFadingText |
+| getSensorOfUnit | sensor |
+| getPositionInFrontOfPosition | polarProjection |
+| lastPlayedTimeOfPlayer | lastPlayedTime |
+| getLastPurchasedUnit | lastPurchasedUnit |
+| getLastPlayerSelectingDialogueOption | lastSelectingDialogueOption |
+| getTriggeringItem | triggeringItem |
+| playerCustomInput | lastPlayerInput |
+| getTriggeringRegion | triggeringRegion |
+| getLastOverlappingUnit | lastOverlappingUnit |
+| lastPurchasedUnitTypetId | lastPurchasedUnitType |
+| getTriggeringPlayer | triggeringPlayer |
+| getLastOverlappedUnit | lastOverlappedUnit |
+| getLastCreatedItem | lastCreatedItem |
+| getLastCreatedProjectile | lastCreatedProjectile |
+| getLastTouchingUnit | lastTouchingUnit |
+| getLastOverlappingItem | lastOverlappingItem |
+| entityLastRaycastCollisionPosition | lastRaycastCollisionPos |
+| getLastCastingUnit | lastCastingUnit |
+| getLastTouchedUnit | lastTouchedUnit |
+| getTriggeringProjectile | triggeringProj |
+| getLastCreatedUnit | lastCreatedUnit |
+| getTriggeringUnit | triggeringUnit |
+| getLastTouchedItem | lastTouchedItem |
+| getLastTouchedProjectile | lastTouchedProj |
+| getLastOverlappingProjectile | lastOverlappingProj |
+| getTriggeringAttribute | triggeringAttr |
+| getLastAttackedUnit | lastAttackedUnit |
+| getLastAttackingUnit | lastAttackingUnit |
+| getLastChatMessageSentByPlayer | lastChatMessageSent |
+| getLastAttackingItem | lastAttackingItem |
+
+You can use these aliases directly, like pos(2, 5), created a position
+> no worries! the complete suggestions will help you, no need to remember these aliases
+
+## method & property
