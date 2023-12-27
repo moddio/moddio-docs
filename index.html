@@ -104,7 +104,8 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script>
-    const e = document.getElementById('moddioVersion')
+    setTimeout(()=> {
+      const e = document.getElementById('moddioVersion')
     if (e) {
       axios.get('https://www.modd.io/play/braainsio/')
         .then(function (response) {
@@ -123,6 +124,8 @@
           }
         })
     }
+    }, 500)
+    
   </script>
 </body>
 
