@@ -104,28 +104,25 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script>
-    const timer = setInterval(() => {
-      const e = document.getElementById('moddioVersion')
-      if (e) {
-        axios.get('https://www.modd.io/play/braainsio/')
-          .then(function (response) {
-            // handle success
-            clearInterval(timer)
-            const regex = /"engineVersions":(\[[\s\S]*?\],)/;
-            const match = response.data.match(regex);
-            if (match) {
-              const engineVersionsString = match[1];
-              const versions = JSON.parse(engineVersionsString.slice(0, engineVersionsString.length - 1))              
-              if(versions[0].name !== e.innerHTML.match(/(\d+\.\d+\.\d+)/)[0]) {
-                e.innerHTML = e.innerHTML.replace("current", 'outdated!')
-              }
-              
-              console.log(versions);
+    const e = document.getElementById('moddioVersion')
+    if (e) {
+      axios.get('https://www.modd.io/play/braainsio/')
+        .then(function (response) {
+          // handle success
+          clearInterval(timer)
+          const regex = /"engineVersions":(\[[\s\S]*?\],)/;
+          const match = response.data.match(regex);
+          if (match) {
+            const engineVersionsString = match[1];
+            const versions = JSON.parse(engineVersionsString.slice(0, engineVersionsString.length - 1))
+            if (versions[0].name !== e.innerHTML.match(/(\d+\.\d+\.\d+)/)[0]) {
+              e.innerHTML = e.innerHTML.replace("current", 'outdated!')
             }
-          })
-      }
-    }, 100)
 
+            console.log(versions);
+          }
+        })
+    }
   </script>
 </body>
 
