@@ -727,6 +727,10 @@ h1 a, h2 a, h3 a{
 .markdown-section em {
   color: #7f8c8d;
 }
+.markdown-section pre code {
+  border: none !important;
+}
+
 .markdown-section code {
   background-color: #282828;
   border-radius: 2px;
