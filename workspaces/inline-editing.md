@@ -31,7 +31,7 @@ And for <code>string</code>, it's very useful to use inline-editing when u want 
 > Try type
 
 ```js
-"a random <code>number</code> = " + randNumber(0, 5);
+"a random number = " + randNumber(0, 5);
 ```
 
 > Tips  
