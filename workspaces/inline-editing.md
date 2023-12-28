@@ -42,7 +42,7 @@ And for <code>string</code>, it's very useful to use inline-editing when u want 
 (1 + 1) + "hello"; // "2hello"
 ```
 
-## action aliases
+## Action aliases
 > In inline-editing, we have many action aliases to simplified function calling, here is the table  
 no worries! the complete suggestions will help you, no need to remember these aliases
 
@@ -109,7 +109,7 @@ no worries! the complete suggestions will help you, no need to remember these al
 
 You can use these aliases directly, like pos(2, 5), created a position
 
-## method & property
+## Method & Property
 > do you know the method chaining?  
 > it's something that you can call the functions one by one like in a chain
 ```js
@@ -134,9 +134,9 @@ here is the table of contents currently available
 |-|-|player|
 |-|-|unitTypeGroup|
 
-## attr & var
-you can use someEntity.some_var to get the var
-someEntity.$some_attr to get the attr
+## Attr & Var
+you can use <code>someEntity.some_var</code> to get the var  
+<code>someEntity.$some_attr</code> to get the attr
 > e.g.
 ```js
 // you need to define these attr or var first in entity editor
@@ -144,7 +144,7 @@ thisEntity.deathCount
 thisEntity.$health
 ```
 
-## if statement
+## If statement
 ### && (and)
 > e.g.  
 ```js
@@ -173,8 +173,11 @@ pos(0, 1).y > 1 || thisEntity.$health == 10
 pos(0, 1).y > 1 && thisEntity.$health <= 10
 ```
 
-## playground
+## Playground
 you can always play in playground first, enjoy it.  
 [playground](https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs)
 <iframe style="height: 40rem" src = "https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs" >
 </iframe>
+
+## Examples
+
