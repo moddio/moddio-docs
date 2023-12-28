@@ -118,9 +118,7 @@
             const versions = JSON.parse(engineVersionsString.slice(0, engineVersionsString.length - 1))
             if (versions[0].name !== e.innerHTML.match(/(\d+\.\d+\.\d+)/)[0]) {
               e.innerHTML = e.innerHTML.replace("current", 'outdated!')
-            }
-
-            console.log(versions);
+            }            
           }
         })
     }
