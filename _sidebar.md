@@ -57,7 +57,10 @@
       * [Entity Variables](using-scripts/entity-variables/entity-variables.md)
       * [States](using-scripts/states/states.md)
   * [UI Editor](workspaces/UI-editor.md)
+      * [Using Handlebars](UI/using-handlebars.md)
       * [Ingame UI](UI/ingame-UI.md)
+      * [Title Screen](UI/title-screen.md)
+      * [Dialogues](UI/dialogues.md)
   * [Reports](workspaces/reports.md)
   * [Settings](workspaces/settings.md)
 

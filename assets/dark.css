@@ -370,7 +370,7 @@ body.sticky .sidebar-toggle {
   border-top: 1px solid #ccc;
 }
 .markdown-section tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #292929;
 }
 .markdown-section p.tip {
   background-color: #f8f8f8;
@@ -746,7 +746,7 @@ h1 a, h2 a, h3 a{
   line-height: 1.5rem;
   margin: 1.2em 0;
   overflow: auto;
-  padding: 0 1.4rem;
+  /* padding: 0 1.4rem; */
   position: relative;
   word-wrap: normal;
 }
@@ -841,7 +841,7 @@ h1 a, h2 a, h3 a{
   margin: 0 2px;
   max-width: inherit;
   overflow: inherit;
-  padding: 2.2em 5px;
+  padding: 2.2em 20px;
   white-space: inherit;
 }
 .markdown-section code::after,
@@ -876,4 +876,8 @@ input[type='search'] {
   background: #4f4f4f;
   border-color: #4f4f4f;
   color: #c8c8c8;
+}
+
+td::before {
+  display: none;
 }
