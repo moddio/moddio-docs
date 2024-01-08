@@ -119,6 +119,8 @@ You can use these aliases directly, like pos(2, 5), created a position
 > it's something that you can call the functions one by one like in a chain
 ```js
 pos(5, 6).x.abs // equals to abs(getXCoordinate(xyCoordinate(5, 6))), seems much better, right?
+// and it can be very long, very very long...
+pos(5.6).x.abs.cos.sin.randNumber(5).cos.abs.abs.abs.abs.abs.abs.abs
 ```
 
 Yes, the inline-editing can help you do this thing, you only need to connect them one by one  
@@ -165,4 +167,35 @@ you can always play in playground first, enjoy it.
 <iframe style="height: 40rem" src = "https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs" >
 </iframe>
 
-## Examples
+## Q&A
+
+#### It crashed my editor
+---
+It's still in beta, im sorry to hear that, feel free to open an issue or direct message @jiloduo (Moe'Thun) in discord, plz also take some screenshots or error logs, I beg you.
+
+#### Which way is better? default or inline
+---
+In complex situation, just use inline
+
+#### How can I contribute to the inline editing
+---
+For now, there are two repos of inline editing,
+- [script-parser](https://github.com/moddio/script-parser)
+- [script-editor](https://github.com/moddio/script-editor)
+read the README.md to know more
+
+## Changelog
+- **[2.1.0]:**
+  - support if condition statement
+  - support auto completion for unitType and script
+  - fixing issues in runScript, getVariable and getAttribute
+  - actions which prefer to use var.method will be converted back as var.method, e.g pos(2, 2).x will be pos(2, 2).x rather than x(pos(2, 2))
+  - 1 + 1 + "5" will be "115" rather than "25"
+  - refactor the string iteration of inline-editing, the error markers position would be more meaningful
+  - support some_entity.$some_attr for attributes, e.g thisEntity.$health
+  - var.method() won't always use var as the first input parameters for the method, but will auto insert to the right pos  
+    e.g  
+    some_method(number, string),  
+    "test".some_method(2) = some_method("test", 2) [prev, which is wrong]  
+    "test".some_method(2) = some_method(2, "test") [now, which is right]
+- **[2.0.0]:** added

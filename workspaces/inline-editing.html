@@ -332,6 +332,8 @@ no worries! the complete suggestions will help you, no need to remember these al
 it's something that you can call the functions one by one like in a chain</p>
 </blockquote>
 <pre><code class="language-js"><span class="hljs-title function_">pos</span>(<span class="hljs-number">5</span>, <span class="hljs-number">6</span>).<span class="hljs-property">x</span>.<span class="hljs-property">abs</span> <span class="hljs-comment">// equals to abs(getXCoordinate(xyCoordinate(5, 6))), seems much better, right?</span>
+<span class="hljs-comment">// and it can be very long, very very long...</span>
+<span class="hljs-title function_">pos</span>(<span class="hljs-number">5.6</span>).<span class="hljs-property">x</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">cos</span>.<span class="hljs-property">sin</span>.<span class="hljs-title function_">randNumber</span>(<span class="hljs-number">5</span>).<span class="hljs-property">cos</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">abs</span>.<span class="hljs-property">abs</span>
 </code></pre>
 <p>Yes, the inline-editing can help you do this thing, you only need to connect them one by one<br>
 You may noticed that some properties have same names</p>
@@ -393,7 +395,41 @@ thisEntity.<span class="hljs-property">$health</span>
 <a href="https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs">playground</a></p>
 <iframe style="height: 40rem" src = "https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs" >
 </iframe>
-<h2 id="examples">Examples</h2>
+<h2 id="qa">Q&amp;A</h2>
+<h4 id="it-crashed-my-editor">It crashed my editor</h4>
+<hr>
+<p>It's still in beta, im sorry to hear that, feel free to open an issue or direct message @jiloduo (Moe'Thun) in discord, plz also take some screenshots or error logs, I beg you.</p>
+<h4 id="which-way-is-better-default-or-inline">Which way is better? default or inline</h4>
+<hr>
+<p>In complex situation, just use inline</p>
+<h4 id="how-can-i-contribute-to-the-inline-editing">How can I contribute to the inline editing</h4>
+<hr>
+<p>For now, there are two repos of inline editing,</p>
+<ul>
+<li><a href="https://github.com/moddio/script-parser">script-parser</a></li>
+<li><a href="https://github.com/moddio/script-editor">script-editor</a>
+read the <a href="http://README.html">README.md</a> to know more</li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li><strong>[2.1.0]:</strong>
+<ul>
+<li>support if condition statement</li>
+<li>support auto completion for unitType and script</li>
+<li>fixing issues in runScript, getVariable and getAttribute</li>
+<li>actions which prefer to use var.method will be converted back as var.method, e.g pos(2, 2).x will be pos(2, 2).x rather than x(pos(2, 2))</li>
+<li>1 + 1 + &quot;5&quot; will be &quot;115&quot; rather than &quot;25&quot;</li>
+<li>refactor the string iteration of inline-editing, the error markers position would be more meaningful</li>
+<li>support some_entity.$some_attr for attributes, e.g thisEntity.$health</li>
+<li>var.method() won't always use var as the first input parameters for the method, but will auto insert to the right pos<br>
+e.g<br>
+some_method(number, string),<br>
+&quot;test&quot;.some_method(2) = some_method(&quot;test&quot;, 2) [prev, which is wrong]<br>
+&quot;test&quot;.some_method(2) = some_method(2, &quot;test&quot;) [now, which is right]</li>
+</ul>
+</li>
+<li><strong>[2.0.0]:</strong> added</li>
+</ul>
 
         <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
         
