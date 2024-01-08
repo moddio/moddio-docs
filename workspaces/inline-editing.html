@@ -51,16 +51,20 @@
 <tbody></tbody>
 </table>
 <h1 id="inline-editing">Inline-editing</h1>
-<p>Hello :D, are you tired of endlessly clicking on each slot in the script editor, ya, I know this feeling as well, if so then you can try the inline-editing.</p>
-<p>Maybe, you have noticed that you can change the editing mode in script modal, <img src="file:///d:\repo\moddio-docs\img\inline-editing\introduce.png" alt="inline-editing">
-But it's not the only way to change the editing mode, try <strong>ctrl+q</strong></p>
+<blockquote>
+<p>🚧 Beware! inline-editing is heavily under construction and a lot of things may change.
+Please use the latest version whenever possible</p>
+</blockquote>
+<p>If you're tired of clicking on each slot in the script editor, there's a solution for you: inline editing. You can change the editing mode in the script modal or use the shortcut <code><strong>ctrl+q</strong></code> to toggle the editing mode. This feature allows you to edit multiple slots simultaneously without having to navigate through nested objects. It's especially useful for editing numbers. You can freely copy and paste in the inline editing mode.</p>
+<p><a href="../img/inline-editing/introduce.png">inline-editing</a></p>
 <p><img src="file:///d:\repo\moddio-docs\img\inline-editing\firstUseInline.png" alt="magic">
 There is a magical feeling so right~ ♪, huhh, as you can see, the multi-nested object is getting flat, I mean u can edit every slots at same time, no need to click to go deep the nested object, especially useful for editing those numbers.</p>
 <p>You can copy or paste here freely, enjoy xD.</p>
 <hr>
-<p>And then let's start with the &quot;hello world&quot;, the very classic one.
-<img src="file:///d:\repo\moddio-docs\img\inline-editing\helloWorld.png" alt="sendChatMessage">
-Choose the send chat message action in the drop down, change it to inline editing mode, and type &quot;hello world&quot;, don't forget the quotes &quot;&quot;, btw you can use '' as well, it's useful to wrap <code>string</code> with '', if you want to use &quot;&quot; in the <code>string</code>, like, 'once upon a time, some one said: &quot;hello world&quot; '</p>
+<h2 id="hello-world-example">&quot;Hello World&quot; Example</h2>
+<p>To start with a classic &quot;hello world&quot; example, you can choose the <code>send chat message</code> action from the dropdown menu in the script editor. Change it to inline editing mode and type &quot;hello world&quot; within quotes. You can also use single quotes if you need to include double quotes within the string. For example, 'once upon a time, someone said: &quot;hello world&quot;'.</p>
+<p>Inline editing is particularly useful when concatenating strings with other strings or numbers. For instance, you can try typing the following code:
+<img src="file:///d:\repo\moddio-docs\img\inline-editing\helloWorld.png" alt="sendChatMessage"></p>
 <p>And for <code>string</code>, it's very useful to use inline-editing when u want to concat the <code>string</code> with <code>string</code> or <code>number</code></p>
 <blockquote>
 <p>Try type</p>
@@ -371,44 +375,19 @@ You may noticed that some properties have same names</p>
 <h2 id="attr--var">Attr &amp; Var</h2>
 <p>you can use <code>someEntity.some_var</code> to get the var<br>
 <code>someEntity.$some_attr</code> to get the attr</p>
-<blockquote>
-<p>e.g.</p>
-</blockquote>
 <pre><code class="language-js"><span class="hljs-comment">// you need to define these attr or var first in entity editor</span>
 thisEntity.<span class="hljs-property">deathCount</span>
 thisEntity.<span class="hljs-property">$health</span>
 </code></pre>
 <h2 id="if-statement">If statement</h2>
-<h3 id="-and">&amp;&amp; (and)</h3>
-<blockquote>
-<p>e.g.</p>
-</blockquote>
-<pre><code class="language-js"><span class="hljs-title function_">pos</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>).<span class="hljs-property">y</span> &gt; <span class="hljs-number">1</span> &amp;&amp; thisEntity.<span class="hljs-property">$health</span> != <span class="hljs-number">10</span>
-</code></pre>
-<h3 id="-or">|| (or)</h3>
-<blockquote>
-<p>e.g.</p>
-</blockquote>
-<pre><code class="language-js"><span class="hljs-title function_">pos</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>).<span class="hljs-property">y</span> &gt; <span class="hljs-number">1</span> || thisEntity.<span class="hljs-property">$health</span> == <span class="hljs-number">10</span>
-</code></pre>
-<h3 id="not-equal">not equal</h3>
-<blockquote>
-<p>e.g.</p>
-</blockquote>
-<pre><code class="language-js"><span class="hljs-number">1</span> != <span class="hljs-number">2</span>
-</code></pre>
-<h3 id="equal">equal</h3>
-<blockquote>
-<p>e.g.</p>
-</blockquote>
-<pre><code class="language-js"><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
-</code></pre>
-<h3 id="----">&gt; &lt; &gt;=  &lt;=</h3>
-<blockquote>
-<p>e.g.</p>
-</blockquote>
-<pre><code class="language-js"><span class="hljs-title function_">pos</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>).<span class="hljs-property">y</span> &gt; <span class="hljs-number">1</span> &amp;&amp; thisEntity.<span class="hljs-property">$health</span> &lt;= <span class="hljs-number">10</span>
-</code></pre>
+<p>In inline editing, you can use various operators for conditional statements. Here are a few examples:</p>
+<ul>
+<li><strong>&amp;&amp;</strong> (and): pos(0, 1).y &gt; 1 &amp;&amp; thisEntity.$health != 10</li>
+<li><strong>||</strong> (or): pos(0, 1).y &gt; 1 || thisEntity.$health == 10</li>
+<li><strong>!=</strong> (not equal): 1 != 2</li>
+<li><strong>==</strong> (equal): 1 == 1</li>
+<li><strong>&gt;, &lt;, &gt;=, &lt;=</strong>: pos(0, 1).y &gt; 1 &amp;&amp; thisEntity.$health &lt;= 10</li>
+</ul>
 <h2 id="playground">Playground</h2>
 <p>you can always play in playground first, enjoy it.<br>
 <a href="https://moddio.github.io/script-editor/?path=/docs/textscripteditor--docs">playground</a></p>

@@ -10,10 +10,13 @@
 
 # Inline-editing
 
-Hello :D, are you tired of endlessly clicking on each slot in the script editor, ya, I know this feeling as well, if so then you can try the inline-editing.
+> 🚧 Beware! inline-editing is heavily under construction and a lot of things may change.
+> Please use the latest version whenever possible
 
-Maybe, you have noticed that you can change the editing mode in script modal, ![inline-editing](../img/inline-editing/introduce.png)
-But it's not the only way to change the editing mode, try **ctrl+q**
+
+If you're tired of clicking on each slot in the script editor, there's a solution for you: inline editing. You can change the editing mode in the script modal or use the shortcut <code>**ctrl+q**</code> to toggle the editing mode. This feature allows you to edit multiple slots simultaneously without having to navigate through nested objects. It's especially useful for editing numbers. You can freely copy and paste in the inline editing mode.
+
+[inline-editing](../img/inline-editing/introduce.png)
 
 ![magic](../img/inline-editing/firstUseInline.png)
 There is a magical feeling so right~ ♪, huhh, as you can see, the multi-nested object is getting flat, I mean u can edit every slots at same time, no need to click to go deep the nested object, especially useful for editing those numbers.
@@ -22,9 +25,11 @@ You can copy or paste here freely, enjoy xD.
 
 ---
 
-And then let's start with the "hello world", the very classic one.
+## "Hello World" Example
+To start with a classic "hello world" example, you can choose the <code>send chat message</code> action from the dropdown menu in the script editor. Change it to inline editing mode and type "hello world" within quotes. You can also use single quotes if you need to include double quotes within the string. For example, 'once upon a time, someone said: "hello world"'.
+
+Inline editing is particularly useful when concatenating strings with other strings or numbers. For instance, you can try typing the following code:
 ![sendChatMessage](../img/inline-editing/helloWorld.png)
-Choose the send chat message action in the drop down, change it to inline editing mode, and type "hello world", don't forget the quotes "", btw you can use '' as well, it's useful to wrap <code>string</code> with '', if you want to use "" in the <code>string</code>, like, 'once upon a time, some one said: "hello world" '
 
 And for <code>string</code>, it's very useful to use inline-editing when u want to concat the <code>string</code> with <code>string</code> or <code>number</code>
 
@@ -137,7 +142,7 @@ here is the table of contents currently available
 ## Attr & Var
 you can use <code>someEntity.some_var</code> to get the var  
 <code>someEntity.$some_attr</code> to get the attr
-> e.g.
+
 ```js
 // you need to define these attr or var first in entity editor
 thisEntity.deathCount
@@ -145,33 +150,14 @@ thisEntity.$health
 ```
 
 ## If statement
-### && (and)
-> e.g.  
-```js
-pos(0, 1).y > 1 && thisEntity.$health != 10
-```
-### || (or)
-> e.g.  
-```js
-pos(0, 1).y > 1 || thisEntity.$health == 10
-```
-### not equal
-> e.g.  
-```js
-1 != 2
-```
 
-### equal
-> e.g.  
-```js
-1 == 1
-```
+In inline editing, you can use various operators for conditional statements. Here are a few examples:
 
-### > < >=  <=
-> e.g.  
-```js
-pos(0, 1).y > 1 && thisEntity.$health <= 10
-```
+- **&&** (and): pos(0, 1).y > 1 && thisEntity.$health != 10
+- **||** (or): pos(0, 1).y > 1 || thisEntity.$health == 10
+- **!=** (not equal): 1 != 2
+- **==** (equal): 1 == 1
+- **>, <, >=, <=**: pos(0, 1).y > 1 && thisEntity.$health <= 10
 
 ## Playground
 you can always play in playground first, enjoy it.  
@@ -180,4 +166,3 @@ you can always play in playground first, enjoy it.
 </iframe>
 
 ## Examples
-
