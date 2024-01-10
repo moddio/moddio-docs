@@ -58,7 +58,10 @@
       * [States](using-scripts/states/states.md)
   * [Inline-editing](workspaces/inline-editing.md)
   * [UI Editor](workspaces/UI-editor.md)
+      * [Using Handlebars](UI/using-handlebars.md)
       * [Ingame UI](UI/ingame-UI.md)
+      * [Title Screen](UI/title-screen.md)
+      * [Dialogues](UI/dialogues.md)
   * [Reports](workspaces/reports.md)
   * [Settings](workspaces/settings.md)
 
