@@ -18,6 +18,7 @@
 
 * **Getting Started**
   * [Making Your First Game](first-game/first-game-tutorial.md)
+  * [Game Templates](first-game/game-templates.md)
 
 * **Game Editor**
 
@@ -32,6 +33,8 @@
 
     * [Script Editor](using-scripts/script-editor/script-editor.md)
       * [Run on...](using-scripts/script-editor/run-on.md)
+      * [Folders](using-scripts/script-editor/folders.md)
+      * [Inline Editor](using-scripts/script-editor/inline-editor.md)
   
     * [Unit](using-scripts/entity-types/unit.md)
       * [General](using-scripts/entity-types/unit?id=general)
@@ -54,7 +57,10 @@
       * [Entity Variables](using-scripts/entity-variables/entity-variables.md)
       * [States](using-scripts/states/states.md)
   * [UI Editor](workspaces/UI-editor.md)
+      * [Using Handlebars](UI/using-handlebars.md)
       * [Ingame UI](UI/ingame-UI.md)
+      * [Title Screen](UI/title-screen.md)
+      * [Dialogues](UI/dialogues.md)
   * [Reports](workspaces/reports.md)
   * [Settings](workspaces/settings.md)
 
@@ -64,6 +70,11 @@
 
 * **Moderation**
   * [Roles & Permissions](moderation/roles.md)
+ 
+* **Game Features**
+  * [Communities](workspaces/communities.md)
+  * [Game Tiers](workspaces/game-tiers.md)
+  * [Versioning](workspaces/versioning.md)
 
 * **Learn**
   * [Learn with Guides](guides/guides.md)
