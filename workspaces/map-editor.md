@@ -109,5 +109,3 @@ The **modd.io map editor** allows you to organize your map into layers, each ser
 
 - Click on the "**Play**" button on the top panel to playtest your map.
 - Make any necessary adjustments based on your gameplay experience.
-
-*Guide by Not_Noah*
