@@ -1,0 +1,1 @@
+Makes the provided player say the specified chat message. If provided player is controlled by human, the message will only appear in a chat bubble above the player controlled unit. If provided player controlled by AI, the message will also appear in the chat box.

@@ -1,0 +1,1 @@
+Any UI element that is assigned the class “.trigger” will run all scripts that contain this specific trigger when the element is clicked. **triggeringElementId** is a string that contains the ID of the HTML element that has been clicked, **triggeringPlayer** contains the player that has performed the clicking action.
