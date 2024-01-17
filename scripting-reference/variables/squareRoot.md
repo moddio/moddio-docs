@@ -1,0 +1,1 @@
+Takes an input in the form of a number and returns its square root. A square root is the number that when multiplied by itself will equal the input number. This does not work with negative numbers as no number multiplied by itself will be negative.

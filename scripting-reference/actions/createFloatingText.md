@@ -1,0 +1,1 @@
+Creates floating text which is displayed at the location provided in the provided color. The text will float up for a few seconds and slowly fade away. Once created the text cannot be moved or deleted. You cannot change the duration or font.

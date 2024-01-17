@@ -1,0 +1,1 @@
+Runs the provided script.
