@@ -56,6 +56,7 @@
       * [Attributes](using-scripts/attributes/attributes.md)
       * [Entity Variables](using-scripts/entity-variables/entity-variables.md)
       * [States](using-scripts/states/states.md)
+  * [Inline-editing](workspaces/inline-editing.md)
   * [UI Editor](workspaces/UI-editor.md)
       * [Using Handlebars](UI/using-handlebars.md)
       * [Ingame UI](UI/ingame-UI.md)

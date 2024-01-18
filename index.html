@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <!-- title here is overwritten by docsify-->
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="/assets/dark.css">
 
 </head>
+
 <body>
   <style>
     /* TODO: Remove and migrate to .css */
@@ -19,34 +21,33 @@
 
     /* (This is a CSS comment). The below `img` style sets the default CSS styling for all images
     hereafter in this markdown file. */
-    img:not(.emoji)
-    {
-        /* Default display value is `inline-block`. Set it to `block` to prevent surrounding text from
+    img:not(.emoji) {
+      /* Default display value is `inline-block`. Set it to `block` to prevent surrounding text from
         wrapping around the image. Instead, `block` format will force the text to be above or below the
         image, but never to the sides. */
-        display:block;
-        /* Common float options are `left`, `right`, and `none`. Set to `none` to override any previous
+      display: block;
+      /* Common float options are `left`, `right`, and `none`. Set to `none` to override any previous
         settings which might have been `left` or `right`. `left` causes the image to be to the left,
         with text wrapped to the right of the image, and `right` causes the image to be to the right,
         with text wrapped to its left, so long as `display:inline-block` is also used. */
-        float:none;
-        /* Set both the left and right margins to `auto` to cause the image to be centered. */
-        margin-left:auto;
-        margin-right:auto;
-        /* You may also set the size of the image, in percent of width of the screen on which the image
+      float: none;
+      /* Set both the left and right margins to `auto` to cause the image to be centered. */
+      margin-left: auto;
+      margin-right: auto;
+      /* You may also set the size of the image, in percent of width of the screen on which the image
         is being viewed, for example. A good starting point is 60%. It will auto-scale and auto-size
         the image no matter what screen or device it is being viewed on, maintaining proporptions and
         not distorting it. */
-        width:60%;
-        /* You may optionally force a fixed size, or intentionally skew/distort an image by also
+      width: 60%;
+      /* You may optionally force a fixed size, or intentionally skew/distort an image by also
         setting the height. Values for `width` and `height` are commonly set in either percent (%)
         or pixels (px). Ex: `width:100%;` or `height:600px;`. */
-        /* height:400px; */
+      /* height:400px; */
 
-        /* sloont testing
+      /* sloont testing
          *
         */
-        border-radius: 0.25rem;
+      border-radius: 0.25rem;
     }
   </style>
   <div id="app"></div>
@@ -55,6 +56,7 @@
       homepage: 'home.md',
       name: '',
       repo: '',
+      executeScript: true,
       loadSidebar: true,
       autoHeader: false,
       // subMaxLevel: 3,
@@ -67,16 +69,16 @@
         'cache-control': 'max-age=0',
       },
       themeable: {
-          readyTransition : true, // default
-          responsiveTables: true  // default
+        readyTransition: true, // default
+        responsiveTables: false  // default
       },
       markdown: {
         // https://marked.js.org/#/USING_PRO.md#renderer
         renderer: {
-            image: function(href, title, text) {
-                // using title for alt="" yields null for all. using extra param text sets the correct alt=""
-                return `<img src="${href}" data-origin="${href}" alt="${text}">`
-            }
+          image: function (href, title, text) {
+            // using title for alt="" yields null for all. using extra param text sets the correct alt=""
+            return `<img src="${href}" data-origin="${href}" alt="${text}">`
+          }
         }
       },
       editLink: {
@@ -89,14 +91,40 @@
   </script>
 
   <!-- Required -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <script src="//unpkg.com/docsify-edit-link@^1"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
   <!-- Recommended -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ga"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script>
+    setTimeout(()=> {
+      const e = document.getElementById('moddioVersion')
+    if (e) {
+      axios.get('https://www.modd.io/play/braainsio/')
+        .then(function (response) {
+          // handle success
+          clearInterval(timer)
+          const regex = /"engineVersions":(\[[\s\S]*?\],)/;
+          const match = response.data.match(regex);
+          if (match) {
+            const engineVersionsString = match[1];
+            const versions = JSON.parse(engineVersionsString.slice(0, engineVersionsString.length - 1))
+            if (versions[0].name !== e.innerHTML.match(/(\d+\.\d+\.\d+)/)[0]) {
+              e.innerHTML = e.innerHTML.replace("current", 'outdated!')
+            }            
+          }
+        })
+    }
+    }, 500)
+    
+  </script>
 </body>
+
 </html>
