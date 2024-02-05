@@ -1,7 +1,8 @@
 # Overview
 
-Applys a comma format to a number.
+Gives the provided number commas to format it separates the number every three digits.
 
-## Example
+# Example
 
-Ex: 1000000 -> 1,000,000
+- 1000000 -> 1,000,000
+- 1234 -> 1,234
