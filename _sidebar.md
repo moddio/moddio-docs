@@ -35,6 +35,7 @@
       * [Run on...](using-scripts/script-editor/run-on.md)
       * [Folders](using-scripts/script-editor/folders.md)
       * [Inline Editor](using-scripts/script-editor/inline-editor.md)
+      * [Script Editor](using-scripts/script-editor/script-editor.md)
   
     * [Unit](using-scripts/entity-types/unit.md)
       * [General](using-scripts/entity-types/unit?id=general)
