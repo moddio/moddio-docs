@@ -1,5 +1,9 @@
 # Shops
 
+*This page needs help. Find out how to contribute [here](../../how-to-contribute.md)*
+
+#
+
 Shops allow players in games to purchase items or units for in-game attributes, modd coins, or other in-game items.
 
 ## Creating a New Shop
