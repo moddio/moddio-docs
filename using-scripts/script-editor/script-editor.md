@@ -1,8 +1,5 @@
 # Script Editor
 
-*This page needs help. Find out how to contribute [here](../../README.md)*
-
-
 ## What is Visual Scripting?
 
 Scripting lets you **add your own custom behavior** to your game, allowing you to create the game interactions needed for your game idea. 
