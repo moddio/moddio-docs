@@ -12,7 +12,7 @@ To access the UI Editor, click on the `UI` tab in the top menu.
 
 The UI Editor interface is divided into 3 main sections:
 
-1. **Left Panel**: This is where you can see all the UI elements that you have created. You can also create new UI elements from here.
+1. **Left Panel**: This is where you can see all the created UI elements for your game.
 2. **Middle Panel**: This is where you can edit the properties of the UI element that you have selected.
 3. **Top Right Panel**: This is where you can save, preview or reset all changes made to the UI template.
 
