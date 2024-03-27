@@ -60,6 +60,7 @@
   * [Inline-editing](workspaces/inline-editing.md)
   * [UI Editor](workspaces/UI-editor.md)
       * [Using Handlebars](UI/using-handlebars.md)
+      * [Global Variables](UI/global-UI.md)
       * [Ingame UI](UI/ingame-UI.md)
       * [Title Screen](UI/title-screen.md)
       * [Dialogues](UI/dialogues.md)
