@@ -27,3 +27,4 @@ UI elements are the building blocks of the UI. You can create and customize UI e
 - [Ingame UI](UI/ingame-UI.md)
 - [Title Screen](UI/title-screen.md)
 - [Dialogues](UI/dialogues.md)
+- [Subscriptions](UI/subscription.md)
