@@ -74,6 +74,7 @@
     - [Subscriptions](UI/subscription.md)
   - [Reports](workspaces/reports.md)
   - [Settings](workspaces/settings.md)
+  - [Multi-Map](workspaces/multimap.md)
 
 - **Monetization**
 
