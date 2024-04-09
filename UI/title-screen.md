@@ -2,7 +2,7 @@
 
 The title screen is the first thing players see after your game is loaded. 
 You can customize the title by using the **title screen full view**.
-![title screen view](image.png)
+![title screen view](/img/ui/title-screen.png)
 
 The following variables are available for use:
 
