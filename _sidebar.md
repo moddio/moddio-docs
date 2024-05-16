@@ -75,6 +75,7 @@
   - [Reports](workspaces/reports.md)
   - [Settings](workspaces/settings.md)
   - [Multi-Map](workspaces/multimap.md)
+  - [Editor Shortcuts](workspaces/editor-shortcuts.md)
 
 - **Monetization**
 
