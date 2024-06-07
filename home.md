@@ -1,7 +1,7 @@
 # What is Moddio?
 Moddio is an open-source, multiplayer-focused HTML5 Game Engine designed to significantly reduce development time by providing a range of pre-built, common features, so developers don't have to reinvent wheels.
 
-## So what's features are included?
+## So what features are included?
 - Optimized netcode using lag compensation algorithms and data compression easily supporting 100+ moving entities in a single server instance.
 - Integrated 2D physics engine (Box2D & more)
 - Free game server hosting with automatic scaling
