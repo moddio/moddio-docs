@@ -1,6 +1,6 @@
 # Interface
 
-The main Moddio interface remains the same no matter which template you choose. To start a new game, go to **Create** after opening Moddio. Then, click the **Create a new game** button and select your template. This will take you into the game and open the game editor.
+The main Moddio interface remains the same no matter which template you choose. To start a new game, go to [**Create**](https://www.modd.io/create/) after opening Moddio. Then, click the **Create a new game** button and select one of the template options. Blank Template allows you to start on an empty canvas. Selecting a template will take you into the game and open the game editor.
 
 By default, when you enter Moddio, you'll be in Play mode. However, as the owner of the game, you'll have additional UI options that regular players don't have. At the top of the game screen, there's a navigation bar in the center of your window. The bar includes buttons for Editor, Play, Map, Entities, Moderate, Report, and the Publish/Republish button.
 
