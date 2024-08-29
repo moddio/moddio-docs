@@ -40,3 +40,4 @@ The engine enforces the following restrictions when running a Map Game:
 
 - Shop Manipulation:  The addition of World items and World units to map shops is prevented.
 
+Map scripts always run after world scripts.
