@@ -10,19 +10,17 @@ Welcome to the **Making Your First Game** guide in Modd.io! This page helps you 
 
 
 ---
-
 ## Video Tutorial: Creating a Slime Game in 25 Minutes
 
 <iframe
   width="360"
   height="660"
-  src="https://www.youtube.com/embed/JKy78h1ibsQ"
+  src="https://www.youtube.com/embed/gSvX46ru2c8"
   title="Moddio Tutorial | How To Create a Slime Game In 25 Minutes"
   frameborder="0"
   allowfullscreen>
 </iframe>
 
-**Title:** *Moddio Tutorial | How To Create a Slime Game In 25 Minutes*  
 **Description:** In this video, we build a simple **3D Slime Game**. You’ll learn how to:
 
 1. **Import 3D assets** (slime model, etc.) into Modd.io.  
