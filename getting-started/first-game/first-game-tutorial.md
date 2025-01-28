@@ -4,9 +4,8 @@ Welcome to the **Making Your First Game** guide in Modd.io! This page helps you 
 
 <!-- This div floats the link to the right of the text block -->
 <div style="float: right; margin: 0 0 1em 1em;">
-  <a href="./assets/slime-game-assets.zip" download>
-    <strong>⤓ Download 3D Assets (ZIP)</strong>
-  </a>
+  <a href="https://github.com/moddio/moddio-docs/tree/main/getting-started/first-game/assets/slime-game-assets.zip" title="Download" download>Download</a>
+
 </div>
 
 
@@ -38,7 +37,7 @@ By the end, you’ll have a working 3D game loop with basic player movement, ite
 
 ## Next Steps
 
-- Once you’ve followed along, consider checking out the [Game Templates](first-game/game-templates.md) page for more ready-made projects.  
+- Once you’ve followed along, consider checking out the [Game Templates](getting-started/first-game/game-templates.md) page for more ready-made projects.  
 - Explore the [Entities Editor](using-scripts/entity-types/entity-types.md) to learn more about customizing your 3D player, items, or other Units.  
 - Try adding your own variations—like spawning different item types or awarding bonus points.
 
