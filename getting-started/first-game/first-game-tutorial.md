@@ -3,9 +3,9 @@
 Welcome to the **Making Your First Game** guide in Modd.io! This page helps you get started building simple yet complete games. Below you’ll find a new video tutorial plus links to other quick-start examples.
 
 <!-- This div floats the link to the right of the text block -->
-<div style="float: right; margin: 0 0 1em 1em;">
-  <a href="https://github.com/moddio/moddio-docs/tree/main/getting-started/first-game/assets/slime-game-assets.zip" title="Download" download>Download</a>
-
+<div style="float: right; margin: 0 0 1em 1em;"> 
+  <a href="https://docs.modd.io/getting-started/first-game/assets/slime-game-assets.zip" title="Download" download>⤓ Download 3D Assets (ZIP)
+  </a> 
 </div>
 
 
