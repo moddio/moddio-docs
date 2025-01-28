@@ -19,8 +19,9 @@
 
 - **Getting Started**
 
-  - [Making Your First Game](first-game/first-game-tutorial.md)
-  - [Game Templates](first-game/game-templates.md)
+  - [Making Your First Game](getting-started/first-game/first-game-tutorial.md)
+  - [The System Categories](getting-started/system-categories.md)
+  - [Game Templates](getting-started/first-game/game-templates.md)
 
 - **Game Editor**
 
