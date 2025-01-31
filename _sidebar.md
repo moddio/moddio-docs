@@ -20,23 +20,23 @@
 - **Getting Started**
 
   - [Making Your First Game](getting-started/first-game/first-game-tutorial.md)
-  - [The System Categories](getting-started/system-categories.md)
+
   - [Game Templates](getting-started/first-game/game-templates.md)
 
 - **Game Editor**
 
   <!-- * [Navigating the Workspace](/) -->
-
+  - [Entities Editor](game-editor/entities-editor/world.md)
+      - [System](game-editor/entities-editor/system/system.md)
+        - [Environment](game-editor/entities-editor/system/environment.md)
+        - [Player Types](game-editor/entities-editor/system/playerTypes.md)
+        - [Dialogues](game-editor/entities-editor/system/dialogue.md)
+        - [Shops](game-editor/entities-editor/system/shop.md)
+      - [Items](game-editor/items/items.md)
+      - [Projectiles](game-editor/projectiles/projectiles.md)
+      - [Units](game-editor/units/units.md)
   - [Map Editor](workspaces/map-editor.md)
-  - [Entities Editor](using-scripts/entity-types/entity-types.md)
-
-    - [World](using-scripts/world/world.md)
-
-      - [Global Variables](using-scripts/world/global-variables.md)
-      - [Player Types (Factions)](using-scripts/world/player-types.md)
-      - [Shops](using-scripts/world/shops.md)
-      - [Dialogues](using-scripts/world/dialogues.md)
-
+  
     - [Script Editor](using-scripts/script-editor/script-editor.md)
 
       - [Run on...](using-scripts/script-editor/run-on.md)
