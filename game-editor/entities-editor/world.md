@@ -8,18 +8,39 @@
     style="width: 600px; height: auto;" />
 </div>
 
+Welcome to **The World** section of the Modd.io documentation! Here, you'll learn about the major building blocks that make up your game world. First, let's establish a core concept:
 
-Welcome to **The World** section of the Modd.io documentation! Here, you’ll learn about the major building blocks that make up your game world—from high-level “System” configurations down to concrete Items, Projectiles, and Units. Each subsection has its own dedicated page (linked below), where you’ll find more in-depth explanations, screenshots, and scripting examples.
+---
+
+## What Are Entities? When to Use Each Type
+
+In Modd.io, **Entities** are the fundamental objects that exist in your game world. They range from visible objects like swords and characters to abstract systems that govern gameplay rules. Here's how to choose which entity type to use:
+
+| Entity Type | Best For | Examples | When to Use |
+|-------------|----------|----------|-------------|
+| **System** | Global rules & configurations | Environment vars, player classes, shops | When creating game-wide mechanics that affect all players/objects |
+| **Items** | Interactive objects | Weapons, keys, power-ups | When players need to collect, equip, or use physical objects |
+| **Projectiles** | Ranged/traveling objects | Arrows, fireballs, traps | When creating objects that move through space with collision logic |
+| **Units** | Living/moving characters | Players, NPCs, monsters | When creating entities with health, AI, or complex interactions |
+
+### Key Decision Flow
+1. **Need global rules?** → Use **System**
+2. **Physical object players interact with?** → Use **Item**
+3. **Moving object with collision?** → Use **Projectile**
+4. **Living character with attributes?** → Use **Unit**
+
+Now let's explore each entity type in detail:
 
 ---
 
 ## 1. System
 
-**System** (sometimes called “System Folders” in the editor) is where you define:
-- **Environment** (global variables, regions, attributes, entity vars, bodies, states, animations, etc.)  
-- **Player Types** (human or AI roles/classes/factions—Warrior, Mage, RedTeamPlayer, etc.)  
-- **Dialogues** (NPC conversations, branching story text, quest dialogue triggers)  
-- **Shops** (in-game commerce: setting up items for sale, shopkeepers, prices, etc.)
+**System** (sometimes called "System Folders") is your game's rulebook. Use this for:
+- Core environment setup (global variables, physics)  
+- Defining player roles (Warrior class, Red Team faction)  
+- Creating dialogue trees and shop systems
+
+*Example:* Create a "Day/Night Cycle" in Environment variables that affects all Units.
 
 [**Go to the System page →**](game-editor/entities-editor/system/system.md)
 
@@ -27,11 +48,12 @@ Welcome to **The World** section of the Modd.io documentation! Here, you’ll le
 
 ## 2. Items
 
-**Items** are tangible, interactive objects in your game world. They can be placed on the map, picked up, equipped, consumed, or collected by players or NPCs. Examples include:
-- **Weapons** (swords, bows, guns)
-- **Consumables** (health potions, food, power-ups)
-- **Quest Items** (keys, artifacts, collectibles)
+**Items** are your interactive props. Choose Items when:
+- Players need inventory management  
+- Objects require pickup/drop mechanics  
+- You want equippable gear with stat changes
 
+*Example:* Make a "Magic Key" Item that unlocks specific doors when carried.
 
 [**Go to the Items page →**](game-editor/items/items.md)
 
@@ -39,15 +61,12 @@ Welcome to **The World** section of the Modd.io documentation! Here, you’ll le
 
 ## 3. Projectiles
 
-**Projectiles** are specialized entities for ranged or thrown attacks—think **arrows, bullets, fireballs**, or any object that travels through the air. They can be spawned by:
-- A **Player** action (e.g., shooting a bow)
-- An **NPC** skill (enemy mage casting “Fireball”)
-- A **Script** (wave-based spawns, traps firing arrows)
+**Projectiles** handle ranged mechanics. Opt for Projectiles when:
+- Objects need trajectory/arc movement  
+- You require collision events (hit detection)  
+- Creating temporary objects (disappear after impact)
 
-### Why It’s Important
-- **Ranged Combat:** Projectiles enable distance-based gameplay and a variety of combat styles.  
-- **Collision & Effects:** They usually have collision logic (deal damage or apply states on impact) and can be animated (spinning arrow, lightning bolt).  
-- **Flexible Scripting:** Combine triggers like `when projectile collides with unit` to handle explosion effects, splash damage, or quest objectives (e.g., “destroy the target dummy with an arrow”).
+*Example:* Create "Poison Dart" Projectiles that apply a DOT (Damage Over Time) state.
 
 [**Go to the Projectiles page →**](game-editor/projectiles/projectiles.md)
 
@@ -55,16 +74,17 @@ Welcome to **The World** section of the Modd.io documentation! Here, you’ll le
 
 ## 4. Units
 
-**Units** are generally “living” or moving entities in your game world, including **players**, **NPCs**, and **monsters**. They can have:
-- **Attributes** (health, speed, mana, stamina)
-- **States** (poisoned, stunned, on fire)
-- **Animations** (idle, walk, attack)
-- **AI or Player Control** (enemy pathfinding vs. player keyboard input)
+**Units** bring your world to life. Use Units for:
+- Playable characters with attributes  
+- NPCs with AI behavior trees  
+- Enemies with health bars and combat logic
 
+*Example:* Build a "Shopkeeper" Unit that reacts when players approach.
 
 [**Go to the Units page →**](game-editor/units/units.md)
 
 ---
+
 
 ## Entities vs Units: Understanding the Difference
 
@@ -74,9 +94,10 @@ Because **Units** are **active** Entities with attributes (like **health**), sta
 
 > **"When a unit’s attribute becomes 0 or less"**
 
-This type of trigger **focuses on Units specifically**. If we said **"when an entity’s attribute becomes 0 or less,"** we’d also have to filter out non-Unit entities (like **items or projectiles**) to avoid extra, unnecessary checks. By writing **"when a unit’s attribute becomes 0 or less,"** we’re telling the game:  
-> **“Only run this script for objects classified as Units,”**  
-which saves time and simplifies the code.
+This type of trigger **focuses on Units specifically**. If we said 
+>**"when an entity’s attribute becomes 0 or less,"** 
+
+we’d also have to filter out non-Unit entities (like **items or projectiles**) to avoid extra, unnecessary checks. By writing **"when a unit’s attribute becomes 0 or less,"** we’re telling the game: **“Only run this script for objects classified as Units,”** which saves time and simplifies the code.
 
 ### Summary:
 - **All Units are Entities, but not all Entities are Units**.

@@ -28,17 +28,15 @@
   <!-- * [Navigating the Workspace](/) -->
   - [Entities Editor](game-editor/entities-editor/world.md)
       - [System](game-editor/entities-editor/system/system.md)
-        - [Environment](game-editor/entities-editor/system/environment.md)
-        - [Player Types](game-editor/entities-editor/system/playerTypes.md)
+        - [Environment](game-editor/entities-editor/system/Environment.md)
+        - [Player Types](game-editor/entities-editor/system/PlayerTypes.md)
         - [Dialogues](game-editor/entities-editor/system/dialogue.md)
-        - [Shops](game-editor/entities-editor/system/shop.md)
+        - [Shops](game-editor/entities-editor/system/Shop.md)
       - [Items](game-editor/items/items.md)
       - [Projectiles](game-editor/projectiles/projectiles.md)
       - [Units](game-editor/units/units.md)
-  - [Map Editor](workspaces/map-editor.md)
-  
+  - [Map Editor](game-editor/map-editor/map-editor.md)
     - [Script Editor](using-scripts/script-editor/script-editor.md)
-
       - [Run on...](using-scripts/script-editor/run-on.md)
       - [Folders](using-scripts/script-editor/folders.md)
       - [Inline Editor](using-scripts/script-editor/inline-editor.md)

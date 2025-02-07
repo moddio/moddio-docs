@@ -2,7 +2,7 @@
 
 <div style="float: right; margin: 0 0 1em 1em;">
   <img 
-    src="../Imgs/ENV.png"
+    src="../Imgs/ENV.PNG"
     alt="Environment Screenshot"
     title="Environment Screenshot"
     style="width: 600px; height: auto;" />
@@ -15,7 +15,7 @@
 - **[Sounds](#sounds)** / **[Music](#music)** — Short audio clips or full-length background tracks, definable in the Environment for easy playback (e.g., sound effects, ambient music).
 - **[Particle Emitter](#particle-emitter)** — Configurations for visual effects (like sparks, smoke, fire) using a particle system. Great for adding atmosphere or flair to your game.
 - **[Bodies](#bodies)** — define collision shapes or physics bodies (e.g., circular or rectangular).
-- **[States](#states)** — reusable conditions like “Stunned,” “Poisoned,” or “On Fire.”
+- **[States](#states)** — reusable conditions like “Dropped,” “Selected,” or “unselected.”
 - **[Animations](#animations)** — collections of frames (e.g., “Idle,” “Run,” “Attack”) attachable to Entities.
 - **[Abilities](#abilities)** — collections of frames (e.g., “Idle,” “Run,” “Attack”) attachable to Entities.
 - **[Unit Type Groups](#unit-type-groups-item-type-groups)** / **[Item Type Groups](#unit-type-groups-item-type-groups)** — grouping multiple Units or Items for shared logic.
@@ -35,6 +35,10 @@ For a deeper explanation, check out this short video:
 ---
 
 ### What Are Global Variables (and Why Use Them)? <a id="what-are-global-variables-and-why-use-them"></a>
+### Video Overview of Environment
+
+For a deeper explanation, check out this short video:  
+[**Watch “What are Global Variables and How To Use Them?”**](https://youtu.be/0YF0lwEcbT0)
 
 In Modd.io, **Global Variables** are project‐wide data or references accessible from any script or event in your game. They’re especially useful for:
 
@@ -245,7 +249,7 @@ After drawing or selecting a region, you can **edit** its properties—like name
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/RegionMap2.png"
+    src="../Imgs/RegionMap2.pPNGng"
     alt="Editing a Region's properties"
     title="Region Edit Dialog"
     style="width: 400px; height: auto;" />
@@ -262,7 +266,7 @@ Once created, your Regions will show up in **Environment → Regions**:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/RegionMap3.png"
+    src="../Imgs/RegionMap3.PNG"
     alt="Environment > Regions panel in Modd.io"
     title="Regions in Environment Panel"
     style="width: 600px; height: auto;" />
@@ -286,7 +290,7 @@ Here's an example of our player(Adventurer) being spawned in the **spawn** regio
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/RegionMap4.png"
+    src="../Imgs/RegionMap4.PNG"
     alt="Environment > Regions panel in Modd.io"
     title="Regions in Environment Panel"
     style="width: 1000px; height: auto;" />
@@ -302,9 +306,8 @@ Here's an example of our player(Adventurer) being spawned in the **spawn** regio
 - **Rectangles/Polygons**: Depending on your version of Modd.io, you can create either rectangular or polygonal regions for more complex boundaries.  
 - **Integration**: Perfect for marking safe zones, quest triggers, spawn areas, or any zone-based logic in your game.
 
----
-
 ### Attributes <a id="attributes"></a>
+
 ### Video Overview of Environment
 
 For a deeper explanation, check out this short video:  
@@ -312,13 +315,15 @@ For a deeper explanation, check out this short video:
 
 In Modd.io, **Attributes** are **customizable named data types** that you can apply to various Entities—most commonly Units, Items, or Projectiles. For instance, you might create attributes called “Health,” “Mana,” or “Speed.” By defining Attributes in the **Environment → Attributes** panel, you can then **assign** them to your Units or Items and control their initial values, max ranges, regeneration rates, and more.
 
+---
+
 ### How Attributes Appear in the Editor
 
 In the **Environment** panel, you’ll see an **Attributes** list showing each defined attribute’s **Name**, **Default/Range**, **Color**, etc.:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/Attributes.png"
+    src="../Imgs/Attributes.PNG"
     alt="Environment Attributes list"
     title="Environment Attributes in the panel"
     style="width: 700px; height: auto;" />
@@ -326,13 +331,15 @@ In the **Environment** panel, you’ll see an **Attributes** list showing each d
 
 > *Example:* “Experience,” “health,” “speed,” and “tp cooldown” attributes are shown with their default values and ranges.
 
+---
+
 ### Editing an Attribute
 
 When you add or click an attribute, you’ll see a **General** settings tab (and sometimes additional display/config tabs). For example:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/Attributes1.png"
+    src="../Imgs/Attributes1.PNG"
     alt="Attribute General and Display Settings"
     title="Editing an Attribute"
     style="width: 600px; height: auto;" />
@@ -364,32 +371,73 @@ In some versions, you may see an additional **“Unit Bar Style”** section let
 
 ### Why Use Attributes?
 
-- **Core Stats:** They’re perfect for tracking any stat that can go up or down—HP, MP, stamina, or even kill counts.  
-- **Dynamic Gameplay:** Because you can script changes to attributes (e.g., “take 10 damage,” “regenerate 5 health/sec”), they become a foundation for your game’s mechanics.  
-- **Display to Players:** With the display settings, you can show bars or numbers (like a health bar) so players can see vital information at a glance.  
-- **Network Syncing:** If Stream Mode is enabled, changes to an attribute can be reflected in real-time for all players—ideal for multiplayer.  
-- **Integration:** Items might modify an attribute (like a sword that raises “damage” or a potion that boosts “speed”). Similarly, Player Types or Units will reference these attributes to define their base stats.
+- **Core Stats**: They’re perfect for tracking any stat that can go up or down—HP, MP, stamina, or even kill counts.  
+- **Dynamic Gameplay**: You can script changes to attributes (e.g., “take 10 damage,” “regenerate 5 health/sec”), so they become a foundation for your game’s mechanics.  
+- **Display to Players**: Built-in support for bars or numeric displays (like a health bar) so players can see vital information at a glance.  
+- **Network Syncing**: If Stream Mode is enabled, attribute changes are reflected in real-time for all players—ideal for multiplayer.  
+- **Integration**: Items can modify an attribute (like a sword that raises “damage”), or Player Types can reference these attributes to set base stats.
+
+---
+
+### Quick Checklist: When to Use an Attribute Over an Entity Variable
+
+Ask yourself:
+
+- **Do you need to display the value on the Unit (e.g., a health or mana bar)?**  
+- **Do you want the value to automatically increase or decrease over time (regen)?**  
+- **Should the value be clamped to a minimum and maximum (e.g., 0–100)?**  
+- **Do you want a script trigger/event when the attribute becomes full or empty?**  
+
+If you answered **“yes”** to any of these, an **Attribute** is likely the better choice. Attributes make these features easy to configure without writing a lot of extra code.
 
 ---
 
 ### Tips & Best Practices
 
 1. **Name Attributes Clearly**  
-   - e.g., “health,” “mana,” “energy,” “armor,” so you know exactly what they do.  
+   - e.g., “health,” “mana,” “energy,” “armor,” so you know exactly what they track.  
 2. **Set Logical Ranges**  
-   - If your health never exceeds 100, consider a `0–100` range. For XP, you might want `0–999999` if players can level up frequently.  
+   - If your health never exceeds 100, use a `0–100` range. For XP, you might consider `0–999999` if players level up frequently.  
 3. **Regeneration & Scripts**  
-   - Combine small “Regenerate Speed” with scripting logic so attributes can refill over time or in certain states (like “resting” or “poisoned”).  
+   - Combine a small “Regenerate Speed” with scripts for more complex systems (e.g., poison drains health, resting accelerates regeneration).  
 4. **Use Colors**  
-   - Distinct colors help you visually separate attributes in UI bars.  
+   - Distinct colors help you visually separate multiple attribute bars (e.g., red for HP, blue for MP).  
 5. **Check Performance**  
-   - Streaming too many attributes in real-time might slow the game for large-scale multiplayer. Only stream the ones that matter (like health or ammo).  
+   - Streaming many attributes in real-time can slow large-scale multiplayer. Only stream what’s truly necessary (like health or ammo).
 
 ---
 
-### Entity Variables <a id="entity-variables"></a>
+## Entity Variables <a id="entity-variables"></a>
 
-In Modd.io, **Entity Vars** are **default or custom variables** automatically attached to every **Unit**, **Item**, or **Projectile**. Unlike **Attributes**—which have ranges, display options, and regeneration settings—an Entity Variable is often just a raw piece of data (like a number, string, or boolean) that you want each entity to carry. This is useful when you need a per-entity field that doesn’t require the full overhead or UI elements of an Attribute.
+### Video Overview of Entity Variables
+
+For a deeper explanation, check out this short video:  
+[**Watch "When & How to Use Entity Variables"**](https://youtu.be/QwyeMbOne3M)
+
+In Modd.io, **Entity Vars** are per-entity data fields automatically attached to every **Unit**, **Item**, or **Projectile**. They’re similar to **Attributes**—but without the built-in ranges, UI display, or regeneration logic—and are entirely separate from **Global Variables**, which apply to the entire game or session rather than individual entities.
+
+### Understanding the Differences
+
+- **Global Variables**  
+  - Exist at the **game level** (not tied to any single Unit/Item/Projectile).  
+  - **Shared among all players**; changing a global variable affects everyone.  
+  - Remain in place even if no players are present.
+
+- **Entity Variables**  
+  - Stored **inside** each Unit, Item, or Projectile.  
+  - Each entity has its **own** instance, so values can differ per entity.  
+  - Great for storing per-entity data like a faction name, an “ownerID,” or a boss flag.
+
+- **Attributes**  
+  - Built-in stats like Health or custom Attributes you define with UI options (range bars, display text, regeneration, etc.).  
+  - Ideal when you need **visual indicators** or advanced settings for your data (e.g., an HP bar).  
+  - More overhead than a raw Entity Variable, so only use them when you need those extra features.
+
+### Why Use Entity Vars?
+
+1. **Custom Data**: If your Units need a “faction” or an “isBoss” boolean, you can define those once in **Environment → Entity Vars**. Each spawned entity will then carry and store its own value.
+2. **Lightweight**: Unlike Attributes, Entity Vars don’t come with built-in UI or range settings—perfect for purely internal or script-based logic.
+3. **Universal**: Because they apply to all **Units**, **Items**, and **Projectiles**, you can handle logic consistently across many entity types. 
 
 ### How Entity Vars Appear in the Editor
 
@@ -397,23 +445,14 @@ Under **Environment → Entity Vars**, you’ll see a list of custom fields you�
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/EntityVariable.png"
+    src="../Imgs/EntityVariable.PNG"
     alt="Entity Variables panel"
     title="Entity Variables panel in Environment"
     style="width: 600px; height: auto;" />
 </div>
 
-> *Example:* A “random Attribute” variable of type `number`. Every Unit/Item/Projectile in your game will have this variable available, though its actual value may differ per entity.
+> **Example:** A “random Attribute” variable of type `number`. Every Unit/Item/Projectile in your game will have this variable available, though the actual value may differ per entity.
 
-### Why Use Entity Vars?
-
-1. **Custom Data**: If your Units need a “faction” or “isBoss” flag, you can define it once in Entity Vars. Each spawned Unit inherits that variable and can store unique values.
-2. **Lightweight**: Unlike Attributes, Entity Vars don’t have range limits, display bars, or special UI—perfect for purely internal or script-related data.
-3. **Universal**: Because they apply to **all** Entities (Units, Items, or Projectiles), you can handle logic consistently. For instance, an “ownerID” var might let you track who created a projectile or item.
-
-### Accessing Entity Vars in Scripts
-
-Once defined, you can read or modify an entity’s variable in your scripts. For example:
 
 ---
 ## Music & Sounds
@@ -435,7 +474,7 @@ Under **Environment → Sounds**, you’ll see each defined sound with:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/sounds_panel.png"
+    src="../Imgs/Sound.PNG"
     alt="Sounds in Environment"
     title="Sounds in Environment Panel"
     style="width: 600px; height: auto;"
@@ -460,7 +499,7 @@ Under **Environment → Music**, you’ll see each defined track with:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/Music.png"
+    src="../Imgs/Music.PNG"
     alt="Music in Environment"
     title="Music in Environment Panel"
   />
@@ -483,7 +522,7 @@ Under **Environment → Particle Emitter**, you’ll find a list of particle def
 
 <div style="text-align: center;">
   <img 
-    src="../Imgs/particle_emitter_list.png"
+    src="../Imgs/particleEmitter.PNG"
     alt="Particle Emitter list in Environment"
     title="Particle Emitter Panel"
     style="width: 600px; height: auto;" />
@@ -497,7 +536,7 @@ Click **Add New** or select an existing emitter to open the **Particle Editor**:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/particle_editor.png"
+    src="../Imgs/particleEmitter1.PNG"
     alt="Particle Editor in Modd.io"
     title="Particle Editor"
     style="width: 700px; height: auto;"
@@ -552,7 +591,7 @@ When you open **Environment → Bodies**, you’ll see a list of the body defini
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/bodies.png"
+    src="../Imgs/bodies.PNG"
     alt="Bodies in the Environment Panel"
     title="Bodies in the Environment Panel"
     style="width: 600px; height: auto;"
@@ -567,7 +606,7 @@ Click **Add New** (or select an existing Body) to open the **Body Editor**. You�
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/bodies1.png"
+    src="../Imgs/bodies1.PNG"
     alt="Body Editor for collision shapes and physics"
     title="Body Editor in Modd.io"
     style="width: 300px; height: auto;" 
@@ -713,7 +752,7 @@ Under **Environment → States**, you’ll see a list of defined states:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/states.png"
+    src="../Imgs/states.PNG"
     alt="States in the Environment Panel"
     title="States in the Environment Panel"
     style="width: 600px; height: auto;"
@@ -728,7 +767,7 @@ When you create or select a state, you’ll see several fields in the **General*
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/states1.png"
+    src="../Imgs/states1.PNG"
     alt="State Editor in Modd.io"
     title="Editing a State"
     style="width: 600px; height: auto;"
@@ -767,7 +806,7 @@ Under **Environment → Animations**, you’ll see a list of all named animation
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/animation.png"
+    src="../Imgs/animation.PNG"
     alt="Animations list in the Environment panel"
     title="Animations in the Environment Panel"
     style="width: 600px; height: auto;"
@@ -783,7 +822,7 @@ When you create or select an animation entry, you’ll see a **General** tab wit
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/animation1.png"
+    src="../Imgs/animation1.PNG"
     alt="Animation Editor in Modd.io"
     title="Editing an Animation"
     style="width: 600px; height: auto;"
@@ -946,7 +985,7 @@ Under **Environment → Unit Type Groups**, you’ll see a list of groups you’
 
 <div style="text-align: center;">
   <img 
-    src="../Imgs/UnitTypeGroup.png"
+    src="../Imgs/UnitTypeGroup.PNG"
     alt="Unit Type Groups panel"
     title="Unit Type Groups in Environment"
     style="width: 600px; height: auto;" />
@@ -977,7 +1016,7 @@ Under **Environment → Item Type Groups**, you’ll see something like:
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/ItemTypeGroup.png"
+    src="../Imgs/ItemTypeGroup.PNG"
     alt="Item Type Groups panel"
     title="Item Type Groups in Environment"
     style="width: 600px; height: auto;" />
@@ -1030,7 +1069,7 @@ Secret Variables are used to store sensitive data that should not be publicly ac
 
 <div style="float: right; margin: 0 0 1em 1em;">
   <img 
-    src="../Imgs/secretVar.png"
+    src="../Imgs/secretVar.PNG"
     alt="Secret Variables Panel"
     title="Secret Variables Panel"
     style="width: 600px; height: auto;" />
@@ -1057,7 +1096,7 @@ To add a Secret Variable, follow these steps:
 
 <div style="text-align: center;">
   <img 
-    src="../Imgs/secretVar1.png"
+    src="../Imgs/secretVar1.PNG"
     alt="Adding a Secret Variable"
     title="Adding a Secret Variable"
     style="width: 400px; height: auto;" />
