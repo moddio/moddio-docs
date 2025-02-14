@@ -26,6 +26,7 @@
 - **Game Editor**
 
   <!-- * [Navigating the Workspace](/) -->
+  - [Map Editor](game-editor/map-editor/map-editor.md)
   - [Entities Editor](game-editor/entities-editor/world.md)
       - [System](game-editor/entities-editor/system/system.md)
         - [Environment](game-editor/entities-editor/system/Environment.md)
@@ -35,35 +36,15 @@
       - [Items](game-editor/items/items.md)
       - [Projectiles](game-editor/projectiles/projectiles.md)
       - [Units](game-editor/units/units.md)
-  - [Map Editor](game-editor/map-editor/map-editor.md)
-    - [Script Editor](using-scripts/script-editor/script-editor.md)
-      - [Run on...](using-scripts/script-editor/run-on.md)
-      - [Folders](using-scripts/script-editor/folders.md)
-      - [Inline Editor](using-scripts/script-editor/inline-editor.md)
-      - [Script Editor](using-scripts/script-editor/script-editor.md)
-
-    - [Unit](using-scripts/entity-types/unit.md)
-      - [General](using-scripts/entity-types/unit?id=general)
-      - [Controls and Abilities](using-scripts/entity-types/unit?id=controls-and-abilities)
-      - [AI](using-scripts/entity-types/unit?id=ai)
-      - [Effects](using-scripts/entity-types/unit?id=effects)
-      - [Extra](using-scripts/entity-types/unit?id=extra)
-    - [Item](using-scripts/entity-types/item.md)
-      - [Asset Selection](using-scripts/entity-types/item?id=asset-selection)
-      - [General](using-scripts/entity-types/item?id=general)
-      - [Controls](using-scripts/entity-types/item?id=controls)
-    - [Projectile](using-scripts/entity-types/projectile.md)
-    - [Other Data Types](using-scripts/animations/animations.md)
-      - [Abilities](using-scripts/abilities/abilities.md)
-      - [Mobile Canvas](using-scripts/abilities/MobileCanvas.md)
-      - [Animations](using-scripts/animations/animations.md)
-      - [Bodies](using-scripts/bodies/bodies.md)
-      - [Entity Effects](using-scripts/entity-effects/entity-effects.md)
-      - [Attributes](using-scripts/attributes/attributes.md)
-      - [Entity Variables](using-scripts/entity-variables/entity-variables.md)
-      - [States](using-scripts/states/states.md)
-
-  - [Inline-editing](workspaces/inline-editing.md)
+  
+  - [Script Editor](using-scripts/script-editor/script-editor.md)
+    - [Triggers](using-scripts/script-editor/triggers.md)
+    - [Actions](using-scripts/script-editor/actions.md)
+    - [Unit Scripts](using-scripts/script-editor/unit_scripts.md)
+    - [Item Scripts](using-scripts/script-editor/item_scripts.md)
+    - [Projectile Scripts](using-scripts/script-editor/projectile_scripts.md)
+    - [Run on...](using-scripts/script-editor/run-on.md)
+  
   - [UI Editor](workspaces/UI-editor.md)
     - [Using Handlebars](UI/using-handlebars.md)
     - [Global Variables](UI/global-UI.md)
@@ -75,7 +56,8 @@
   - [Settings](workspaces/settings.md)
   - [Multi-Map](workspaces/multimap.md)
   - [Editor Shortcuts](workspaces/editor-shortcuts.md)
-
+  - [Inline-editing](workspaces/inline-editing.md)
+  
 - **Monetization**
 
   - [Creator Coins Guidelines](monetization/creator-coin-guideline.md)

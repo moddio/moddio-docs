@@ -1,3 +1,6 @@
+WARNING: This feature is in beta and contains a few bugs. Use with caution
+
+
 <table style="display: flex;justify-content: center;" id="moddioVersion">
 <thead>
     <tr>
@@ -8,7 +11,6 @@
 <tbody></tbody>
 </table>
     
-# Inline-editing
 
 > 🚧 Beware! inline-editing is heavily under construction and a lot of things may change.
 > Please use the latest version whenever possible

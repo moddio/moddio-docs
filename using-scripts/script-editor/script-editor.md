@@ -1,83 +1,122 @@
 # Script Editor
 
-*This page needs help. Find out how to contribute [here](../../README.md)*
-
-
 ## What is Visual Scripting?
 
-Scripting lets you **add your own custom behavior** to your game, allowing you to create the game interactions needed for your game idea. 
+Scripting allows you to **define game interactions** without writing traditional code. Instead of using programming syntax, Moddio provides a **visual interface** where you connect blocks (**actions**) to control game logic.
 
-With **visual scripting**, you can define how your game elements should behave without actually writing code. Instead of dealing with complicated code syntax, you use a **visual interface** that lets you connect different blocks (called **actions**) together to create your game logic.
+### How Scripts Work
+## Script Components Overview
 
-### Actions
+Scripting in Moddio consists of several key components:
 
-![Example of script Actions](../../img/scripting/actions.png)
-
-Scripts are composed of [actions](https://www.modd.io/docs/functions/). [Actions](https://www.modd.io/docs/functions/) range from simple tasks like *"destroy this entity"* or *"increase \[variable\] value by \[number\]"* to more complex logic like conditionals (["if \[condition\]:"](https://www.modd.io/docs/functions/condition/)) and loops (["while \[condition\]:"](https://www.modd.io/docs/functions/while)). In Moddio, script actions run in sequence from top to bottom within their respective script block.
-
-You can look up the available actions and what they do in the [API documentation](https://www.modd.io/docs/functions/).
-
-
-### Triggers
-
-![Example of script triggers](../../img/scripting/trigger.png)
-
-Moddio is using an **event-driven approach** which allows you to add [triggers](https://www.modd.io/docs/triggers/) to scripts. [Triggers](https://www.modd.io/docs/triggers/) are basically events that cause the associated script Actions to run. Here's some examples of common triggers: *"when this entity is created"*, *"when a unit picks up an item"*, *"when player joins the game"*. 
-
-Moddio automatically checks at every engine step whether a trigger fulfills the conditions, then runs the associated Script. It's also possible to trigger scripts from another script (with the *"Run Script"* action) and with key/button inputs (with Unit Keybindings).
-
-You can find documentation for all the available triggers in the [API documentation](https://www.modd.io/docs/triggers/).
+| Component | Description |
+|-----------|-------------|
+| **Run On...** | Determines if the script runs **server-side** or **locally**. |
+| **Triggers** | Events that activate a script (e.g., When a unit is created). |
+| **Actions** | Commands executed when a trigger occurs (e.g., `Destroy entity`). |
+| **Unit Scripts** | Scripts attached to **player characters, NPCs, and enemies**. |
+| **Item Scripts** | Scripts affecting **weapons, potions, and collectibles**. |
+| **Projectile Scripts** | Scripts controlling **bullets, arrows, or spell projectiles**. |
 
 
-### The scripts window
+Scripts follow a **trigger-action** system:
+- **Triggers**: Define when a script runs (e.g., "When player joins the game").
+- **Actions**: Define what happens next (e.g., "Give the player a sword").
+- **Sequence**: Actions execute **from top to bottom** in their script block.
 
-While using the ingame-editor, navigate to the "Entities" workspace. A new window with the title "Entities" should open. To open the world scripts window or any of the entity scripts, click on the green buttons labeled "Scripts" located to the right of them.
+Scripts can be **global** (affecting the world) or **entity-specific** (tied to units, items, or projectiles). Using entity scripts improves performance by limiting execution to relevant objects.
 
-![Entity List](../../img/scripting/entitywindow.png)
+---
 
-Let's have a look at the scripts window. For this example, we'll open the scripts of the basic Homie unit:
+## Actions
 
-![scripts of homie unit](../../img/scripting/homiescripts.png)
+![Example of script Actions](imgs/actions2.PNG)
 
-The script window consists of 2 columns:
-* the **script list** on the left sidebar, which shows a tree view of your scripts as well as buttons for creating a new script/folder.
-* the **script view** on the right consisting of (from top to bottom) script title, triggers and the action tree view. To the right of the script title are:
-	* Search button: opens the script search, allowing you to find specific actions or scripts quickly
-	* Help button: opens the help section with helpful video tutorials and links to further documentation
-	* JSON toggle: toggles between Raw JSON View and Tree View. Raw JSON View shows you the JSON format string. You can copy the JSON string to create backups of single scripts.
+Scripts consist of [actions](https://www.modd.io/docs/functions/) that define what happens in response to triggers. Actions range from:
+- **Simple tasks**: `"Destroy this entity"`
+- **Variable modifications**: `"Increase [variable] value by [number]"`
+- **Conditional logic**: `"If [condition], then..."`
+- **Loops**: `"Repeat while [condition] is true"`
 
-#### Creating a script
+For a full list of actions, visit the [API documentation](https://www.modd.io/docs/functions/).
 
-To create a new script, click the button labeled "New Script" on the top left of any script window. You can also right-click on any script or folder in the left sidebar to open the context menu, then select the option labeled "Add new Script".  
+---
+
+## Triggers
+
+![Example of script triggers](imgs/triggers1.PNG)
+
+Moddio uses an **event-driven system**, where [triggers](https://www.modd.io/docs/triggers/) activate scripts. Some common triggers include:
+- `"Every Second"`
+- `"When this entity is created"`
+- `"When a unit picks up an item"`
+- `"When player joins the game"`
+
+Triggers run automatically when their conditions are met. You can also activate scripts manually using the `"Run Script"` action or by assigning keybindings.
+
+A complete list of triggers is available in the [API documentation](https://www.modd.io/docs/triggers/).
+
+---
+
+## Using the Script Editor
+
+To open the script editor:
+1. Navigate to the **Entities workspace** in the Moddio editor.
+2. Click the **"Scripts"** button next to a world entity, unit, item, or projectile.
+3. The **Script Editor Window** opens, displaying the script list and editor panel.
+<div style="text-align:center;">
+  <img
+    src="imgs/scripts1.PNG"
+    alt="When a unit uses item triggers"
+    style="max-width: 600px; height: auto;"
+  />
+</div>
+
+
+The script editor consists of:
+- **Script List (Left Panel)**: Shows all scripts and folders.
+- **Script Editor (Right Panel)**: Displays the selected script, its triggers, and actions.
+- **Toolbar**:
+  - **Search Button**: Quickly find scripts or actions.
+  - **Help Button**: Access video tutorials and documentation.
+  - **JSON Toggle**: Switch between **Tree View** and **Raw JSON** for advanced editing.
+
+---
+
+## Creating & Managing Scripts
+
+### Creating a New Script
+1. Click **"New Script"** at the top left.
+2. Right-click inside a folder and select **"Add new Script"**.
 
 ![creating new script](../../img/scripting/newscript.png)
 
-#### Adding a script action
+### Adding an Action
+1. Click inside the script view.
+2. Select an **action block** from the list.
+3. Adjust parameters (e.g., entity type, values).
 
-To add a script action, click 
+---
+
+## Global vs. Entity Scripting
+
+Entities are **objects in your game world**. Moddio features **four entity types**:
+- **World** (Global scripts affecting the game state)
+- **Units** (Player characters, NPCs, enemies)
+- **Items** (Weapons, potions, collectables)
+- **Projectiles** (Bullets, fireballs, arrows)
+
+### Optimizing Scripts
+
+Using **entity scripts** reduces unnecessary execution, improving performance.
+
+Entities are **objects in your game world**. 
 
 
-
-
-
-
-
-
-
-
-### Global and entity Scripting
-
-Entities are all objects that exist in your game. Moddio features 4 entity Types: World, Units, Items and Projectiles. Global scripts are part of the World entity and are often related to global triggers like 'when game starts'. 
-
-Entity scripts are always associated with an entity. Using entity scripts can improve the performance of your game in many cases. Here's an example: if you want to slow the movement speed of the **Homie** Unit when it enters the **Slowdown** Region with a Global Script, you would need to do the following:  
-![Example of a World Script](../../img/scripting/global.png)
-
-As you can see here, the script is triggered when **any** Unit enters a Region. For this reason we need to compare the Unit Type of the triggering Unit to check if it is Homie. If your game has several types of Unit, this script will also run when those other Units enter a Region, which causes computing resources of the Game Server to be consumed.
-
-If we want to optimize this Script, we have to move it to the **Homie** Unit scripts like this:  
-![Example of an entity Script](../../img/scripting/entity.png)
-
-There are 2 key differences in this Script:
-First of all, the entity script does not need to check whether the Unit Type is Homie. Removing this check means the Game Server has to do less work, so your Game can handle more action at once.
-Second of all, it uses "this entity" instead of "triggering unit". That is mostly a cosmetic change, but it allows you to copy and re-use the script in other entities.
-
+## 🔗 Continue Learning
+- **[Triggers →](using-scripts/script-editor/triggers.md)**
+- **[Actions →](using-scripts/script-editor/actions.md)**
+- **[Unit Scripts →](using-scripts/script-editor/unit_scripts.md)**
+- **[Item Scripts →](using-scripts/script-editor/item_scripts.md)**
+- **[Projectile Scripts →](using-scripts/script-editor/projectile_scripts.md)**
+- **[Run On... →](using-scripts/script-editor/run-on.md)**
