@@ -368,7 +368,7 @@ body.sticky .sidebar-toggle {
   width: 100%;
 }
 .markdown-section th {
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   font-weight: bold;
   padding: 6px 13px;
 }
@@ -380,8 +380,7 @@ body.sticky .sidebar-toggle {
   border-top: 1px solid #ccc;
 }
 .markdown-section tr:nth-child(2n) {
-  background-color: #aaa;
-  color: #000;
+  color: #ccc;
 }
 .markdown-section p.tip {
   background-color: #f8f8f8;
@@ -890,7 +889,7 @@ pre::after {
 }
 .markdown-section p.tip {
   background-color: #282828;
-  color: #657b83;
+  color: #bec0c0;
 }
 input[type="search"] {
   background: #4f4f4f;

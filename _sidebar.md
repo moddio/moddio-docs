@@ -19,8 +19,8 @@
 
 - **Getting Started**
 
-  - [Making Your First Game](getting-started/first-game/first-game-tutorial.md)
-
+  - [Your 3D First Game](getting-started/first-game/first-game-tutorial.md)
+  - [Your 2D First Game](getting-started/2D/your-first-2d-game.md)
   - [Game Templates](getting-started/first-game/game-templates.md)
 
 - **Game Editor**

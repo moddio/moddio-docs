@@ -37,7 +37,7 @@ Each Player Type can have specific **Attributes**, **Bodies**, or custom **Anima
 - A Player Type might reference Attributes (e.g., “Health,” “Mana”) or Animations from **Environment**.  
 - Player variables can also connect to Global Variables (e.g., track total kills in a global scoreboard).
 
-[**Go to the Player Types page →**](game-editor/entities-editor/system/PlayerType.md)
+[**Go to the Player Types page →**](game-editor/entities-editor/system/PlayerTypes.md)
 
 ## 3. Dialogues
 
@@ -62,7 +62,7 @@ Manages in-game shops, vendors, or trading logic:
 - A Shop sells Items (from the **Items** folder).  
 - A “shopkeeper” Unit or Dialogue can open the Shop UI.
 
-[**Go to the Shops page →**](getting-started/projectiles/shop.md)
+[**Go to the Shops page →**](game-editor/entities-editor/system/Shop.md)
 
 ---
 

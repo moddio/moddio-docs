@@ -52,7 +52,7 @@ Because they’re global, you don’t have to pass them around as parameters—a
 
 Here’s how it looks in the editor:
 
-![Global Variables panel](../Imgs/GlobalVar.png "Global Variables panel with a 'player' type AI reference")
+![Global Variables panel](../Imgs/GlobalVar.PNG "Global Variables panel with a 'player' type AI reference")
 
 ---
 
@@ -249,7 +249,7 @@ After drawing or selecting a region, you can **edit** its properties—like name
 
 <div style="text-align: center;">
   <img
-    src="../Imgs/RegionMap2.pPNGng"
+    src="../Imgs/RegionMap2.PNG"
     alt="Editing a Region's properties"
     title="Region Edit Dialog"
     style="width: 400px; height: auto;" />

@@ -43,15 +43,15 @@ Upon creating a new shop, you will see the following interface:
 
 ---
 
-## Shop Settings
-
+## Shop settings
 ### General Properties
-| Property         | Description |
-|-----------------|-------------|
-| **Name**        | The shop's name displayed in the UI. |
-| **Description** | A short description of the shop (optional). |
-| **Dismissible** | Determines whether the shop can be closed freely. |
 
+
+| Property         | Description |
+|------------------|-------------|
+| **Name**         | The shop's name displayed in the UI. |
+| **Description**  | A short description of the shop (optional). |
+| **Dismissible**  | Determines whether the shop can be closed freely. |
 ---
 
 ### Item Management
@@ -91,6 +91,38 @@ The **CSS Class** setting allows developers to **apply custom styling** to a sho
 - Some shops may have **limited inventory**, restricting purchases based on item availability.
 
 ---
+
+
+## EXAMPLE: Creating an NPC-Triggered Shop
+
+### Step 1: Set Up Your Shopkeeper
+1. Create an NPC unit that will act as your shopkeeper
+2. Make sure to assign it a **global variable**:
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="../Imgs/shop3.PNG" alt="NPC initialization script" style="width: 700px; height: auto;">
+  <br><em>Configuring NPC creation and AI settings</em>
+</div>
+
+### Step 2: Create Proximity Trigger
+Add a distance check to open the shop when players approach:
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="../Imgs/shop4.PNG" alt="Proximity trigger setup" style="width: 700px; height: auto;">
+  <br><em>Attatch this script to the player</em>
+</div>
+
+### Step 3: Configure Shop Interaction
+1. Add collision triggers to your NPC (or use an ability to trigger the script)
+2. Set interaction text (e.g., "Press E to Shop")
+3. Test the proximity trigger in-game
+
+**Video Walkthrough:**  
+For a complete visual guide, watch our tutorial showing NPC setup, trigger configuration, and shop testing:  
+[![Shop Setup Tutorial](../Imgs/shop_thumnail.png)](https://youtu.be/5RA0RYjno-E)
+
+---
+
 
 ## Example Shop
 
