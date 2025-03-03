@@ -66,6 +66,7 @@
   - [Inline-editing](workspaces/inline-editing.md)
   - [Reports](workspaces/reports.md)
   - [Editor Shortcuts](workspaces/editor-shortcuts.md)
+  - [Upgrading Engine Version](workspaces/upgradingv3.md)
   
 - **Monetization**
 
