@@ -44,7 +44,8 @@
     - [Item Scripts](using-scripts/script-editor/item_scripts.md)
     - [Projectile Scripts](using-scripts/script-editor/projectile_scripts.md)
     - [Run on...](using-scripts/script-editor/run-on.md)
-  
+<!-- TODO: check what this is and how to re-organize it -->
+
   - [UI Editor](workspaces/UI-editor.md)
     - [Using Handlebars](UI/using-handlebars.md)
     - [Global Variables](UI/global-UI.md)
@@ -52,11 +53,19 @@
     - [Title Screen](UI/title-screen.md)
     - [Dialogues](UI/dialogues.md)
     - [Subscriptions](UI/subscription.md)
-  - [Reports](workspaces/reports.md)
-  - [Settings](workspaces/settings.md)
-  - [Multi-Map](workspaces/multimap.md)
-  - [Editor Shortcuts](workspaces/editor-shortcuts.md)
+  - [Configuration/Settings](config/config.md)
+    - [General Settings](config/general-settings.md)
+    - [Engine Settings](config/engine-settings.md)
+    - [Rendering & Camera](config/rendering-camera.md)
+    - [UI Configuration](config/UI-config.md)
+    - [Map Settings](config/map-settings.md)
+    - [Title Screen](config/title-screen.md)
+    - [Multi-Map](config/multimap.md)
+    - [Web3 Integration](config/Web3.md)
+    
   - [Inline-editing](workspaces/inline-editing.md)
+  - [Reports](workspaces/reports.md)
+  - [Editor Shortcuts](workspaces/editor-shortcuts.md)
   
 - **Monetization**
 
