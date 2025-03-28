@@ -27,6 +27,7 @@
 
   <!-- * [Navigating the Workspace](/) -->
   - [Map Editor](game-editor/map-editor/map-editor.md)
+  - [Collision Editor](workspaces/collision-editor.md)
   - [Entities Editor](game-editor/entities-editor/world.md)
       - [System](game-editor/entities-editor/system/system.md)
         - [Environment](game-editor/entities-editor/system/Environment.md)
